@@ -16,7 +16,12 @@ module.exports = {
         sans: ['var(--font-inter)'],
         "recoleta": "var(--font-recoleta)",
       },
+      colors: {
+        'purple': '#540D6E',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/container-queries'),
+  ],
 }
