@@ -6,9 +6,9 @@ export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header>
-            <div className='container z-50 mx-auto px-3 pt-5 lg:px-48 xl:px-80'>
-                <div className='grid grid-cols-3 items-center'>
+        <header className='mx-auto'>
+            <div className='px-3 pt-5'>
+                <div className='grid grid-cols-3 items-center lg:flex lg:grid-cols-none lg:justify-between'>
                     <div className=''>
                         <button
                             className='lg:hidden'
@@ -44,18 +44,18 @@ export default function Header() {
                             className='inline-block lg:hidden'
                         />
                         <div className='hidden items-center lg:flex'>
-                            <div className='basis-1/4 pr-3 font-recoleta font-bold'>
-                                Work
+                            <div className='pr-5 font-recoleta font-bold lg:pr-20'>
+                                <a>Work</a>
                             </div>
-                            <div className='basis-1/4 pr-3 font-recoleta font-bold'>
-                                About
+                            <div className='pr-5 font-recoleta font-bold lg:pr-20'>
+                                <a>About</a>
                             </div>
-                            <div className='basis-1/4 font-recoleta font-bold'>
-                                Resume
+                            <div className='font-recoleta font-bold'>
+                                <a>Resume</a>
                             </div>
                         </div>
                     </div>
-                    <div className='text-right lg:basis-1/2'>
+                    <div className='text-right'>
                         <a
                             href='mailto:kevinis@the5thbeatle.com'
                             className='hover:bg-purple-700 inline-block rounded bg-purple px-4 py-2 font-recoleta font-semibold text-white'
