@@ -7,8 +7,8 @@ export default function Header() {
 
     return (
         <header>
-            <div className='container absolute z-50 px-3 pt-5 lg:px-80'>
-                <div className='grid grid-cols-3'>
+            <div className='container z-50 mx-auto px-3 pt-5 lg:px-48 xl:px-80'>
+                <div className='grid grid-cols-3 items-center'>
                     <div className=''>
                         <button
                             className='lg:hidden'
@@ -32,7 +32,7 @@ export default function Header() {
                             alt='The 5th Beetle Logo - Kevin Ward'
                             width={40}
                             height={40}
-                            className='hidden'
+                            className='hidden lg:inline-block'
                         />
                     </div>
                     <div className='text-center'>
@@ -43,11 +43,11 @@ export default function Header() {
                             height={40}
                             className='inline-block lg:hidden'
                         />
-                        <div className='hidden  items-center lg:flex'>
-                            <div className='basis-1/4 font-recoleta font-bold'>
+                        <div className='hidden items-center lg:flex'>
+                            <div className='basis-1/4 pr-3 font-recoleta font-bold'>
                                 Work
                             </div>
-                            <div className='basis-1/4 font-recoleta font-bold'>
+                            <div className='basis-1/4 pr-3 font-recoleta font-bold'>
                                 About
                             </div>
                             <div className='basis-1/4 font-recoleta font-bold'>
@@ -72,51 +72,52 @@ export default function Header() {
                 className='relative z-10'
             >
                 <div className='bg-menu-bg fixed inset-0' aria-hidden='true' />
-                <div className='container absolute z-50 px-3 pt-5 lg:hidden'>
-                    <div className='grid grid-cols-3'>
-                        <div className=''>
-                            <button
-                                className='lg:hidden'
-                                onClick={() => {
-                                    !isOpen
-                                        ? setIsOpen(true)
-                                        : setIsOpen(false);
-                                }}
-                            >
-                                <Image
-                                    src={
-                                        isOpen
-                                            ? '/images/close-button.svg'
-                                            : '/images/menu-button.svg'
-                                    }
-                                    width={40}
-                                    height={40}
-                                    alt='Menu button'
-                                />
-                            </button>
-                        </div>
-                        <div className='text-center'>
-                            <Image
-                                src='/images/the-f5th-beetle-logo.svg'
-                                alt='The 5th Beetle Logo - Kevin Ward'
-                                width={40}
-                                height={40}
-                                className='inline-block lg:hidden'
-                            />
-                        </div>
-                        <div className='text-right lg:basis-1/2'>
-                            <a
-                                href='mailto:kevinis@the5thbeatle.com'
-                                className='hover:bg-purple-700 inline-block rounded bg-purple px-4 py-2 font-recoleta font-semibold text-white'
-                            >
-                                Let&apos;s Jam
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div className='fixed inset-0 flex w-screen justify-center p-4'>
+
+                <div className='fixed inset-0 w-screen justify-center px-3 pt-5'>
                     <Dialog.Panel>
-                        <div className='grid grid-cols-1 gap-4 pt-20 text-center'>
+                        <div className='container relative z-50 lg:hidden'>
+                            <div className='grid grid-cols-3'>
+                                <div className=''>
+                                    <button
+                                        className='lg:hidden'
+                                        onClick={() => {
+                                            !isOpen
+                                                ? setIsOpen(true)
+                                                : setIsOpen(false);
+                                        }}
+                                    >
+                                        <Image
+                                            src={
+                                                isOpen
+                                                    ? '/images/close-button.svg'
+                                                    : '/images/menu-button.svg'
+                                            }
+                                            width={40}
+                                            height={40}
+                                            alt='Menu button'
+                                        />
+                                    </button>
+                                </div>
+                                <div className='text-center'>
+                                    <Image
+                                        src='/images/the-f5th-beetle-logo.svg'
+                                        alt='The 5th Beetle Logo - Kevin Ward'
+                                        width={40}
+                                        height={40}
+                                        className='inline-block lg:hidden'
+                                    />
+                                </div>
+                                <div className='text-right lg:basis-1/2'>
+                                    <a
+                                        href='mailto:kevinis@the5thbeatle.com'
+                                        className='hover:bg-purple-700 inline-block rounded bg-purple px-4 py-2 font-recoleta font-semibold text-white'
+                                    >
+                                        Let&apos;s Jam
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='grid grid-cols-1 gap-4 pt-5 text-center'>
                             <div>
                                 <a className='text-3xl text-white'>Work</a>
                             </div>
