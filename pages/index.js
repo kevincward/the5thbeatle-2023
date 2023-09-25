@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import caseStudiesBg from '../public/images/case-studies-background.svg';
+import projectsBg from '../public/images/ocean-background.svg';
 
 export default function Home() {
     return (
-        <main className='py-20'>
+        <main className='pt-20'>
             <div className='container relative px-3'>
                 <div className='flex'>
                     <div className='lg:basis-1/2'>
@@ -174,6 +175,171 @@ export default function Home() {
                             width={56}
                             className='inline-block'
                         />
+                    </div>
+                </div>
+            </div>
+
+            <div className='skills container lg:py-12'>
+                <h2 className='pb-8 text-center font-recoleta text-4xl font-semibold'>
+                    And picked up a few skills along the way
+                </h2>
+                <div className='flex flex-row justify-center pb-6 text-lg lg:pb-12'>
+                    <div className='border-r-orange border-r-2 px-6 py-2'>
+                        <a className='text-gray font-recoleta'>
+                            Research & Strategy
+                        </a>
+                    </div>
+                    <div className='border-r-orange border-r-2 px-6 py-2'>
+                        <a className='text-gray font-recoleta'>
+                            Design Thinking
+                        </a>
+                    </div>
+                    <div className='border-r-orange border-r-2 px-6 py-2'>
+                        <a className='text-gray font-recoleta'>
+                            Product Management
+                        </a>
+                    </div>
+                    <div className='px-3 py-2'>
+                        <a className='text-gray font-recoleta'>
+                            Business Growth
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div className='projects'>
+                <div
+                    className='h-[10.81219rem] bg-cover bg-no-repeat lg:h-[21.64775rem]'
+                    style={{
+                        backgroundImage: `url(${projectsBg.src})`,
+                    }}
+                ></div>
+                <div className='relative bg-[#50C1E2]  pb-16'>
+                    <Image
+                        src='/images/yellow-submarine.svg'
+                        alt='yellow submarine'
+                        className='absolute right-0 top-0 lg:-top-20'
+                        width={317}
+                        height={177}
+                    />
+                    <div className='container'>
+                        <h2 className='pb-8 font-recoleta text-4xl font-semibold'>
+                            While working on different projects
+                        </h2>
+
+                        <div className='grid grid-cols-1 gap-4 lg:grid-cols-2'>
+                            <div className='relative mb-16'>
+                                <Image
+                                    className='inline-block'
+                                    src='/images/project-placeholder.svg'
+                                    alt='view project'
+                                    height={264}
+                                    width={264}
+                                />
+                                <div className='project-card absolute -bottom-10 right-0 mr-3 rounded bg-white p-6 drop-shadow'>
+                                    <p className='pb-4'>
+                                        <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-3xl'>
+                                            Trifecta App Redesign
+                                        </a>
+                                    </p>
+
+                                    <a className='font-recoleta font-semibold text-purple'>
+                                        View{' '}
+                                        <Image
+                                            className='inline-block'
+                                            src='/images/ic_arrow.svg'
+                                            alt='view project'
+                                            height={24}
+                                            width={24}
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className='relative mb-16'>
+                                <Image
+                                    className='inline-block'
+                                    src='/images/project-placeholder.svg'
+                                    alt='view project'
+                                    height={264}
+                                    width={264}
+                                />
+                                <div className='project-card absolute -bottom-10 right-0 mr-3 rounded bg-white p-6 drop-shadow'>
+                                    <p className='pb-4'>
+                                        <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-3xl'>
+                                            Trifecta App Redesign
+                                        </a>
+                                    </p>
+
+                                    <a className='font-recoleta font-semibold text-purple'>
+                                        View{' '}
+                                        <Image
+                                            className='inline-block'
+                                            src='/images/ic_arrow.svg'
+                                            alt='view project'
+                                            height={24}
+                                            width={24}
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className='relative mb-16'>
+                                <Image
+                                    className='inline-block'
+                                    src='/images/project-placeholder.svg'
+                                    alt='view project'
+                                    height={264}
+                                    width={264}
+                                />
+                                <div className='project-card absolute -bottom-10 right-0 mr-3 rounded bg-white p-6 drop-shadow'>
+                                    <p className='pb-4'>
+                                        <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-3xl'>
+                                            Trifecta App Redesign
+                                        </a>
+                                    </p>
+
+                                    <a className='font-recoleta font-semibold text-purple'>
+                                        View{' '}
+                                        <Image
+                                            className='inline-block'
+                                            src='/images/ic_arrow.svg'
+                                            alt='view project'
+                                            height={24}
+                                            width={24}
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className='relative mb-16'>
+                                <Image
+                                    className='inline-block'
+                                    src='/images/project-placeholder.svg'
+                                    alt='view project'
+                                    height={264}
+                                    width={264}
+                                />
+                                <div className='project-card absolute -bottom-10 right-0 mr-3 rounded bg-white p-6 drop-shadow'>
+                                    <p className='pb-4'>
+                                        <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-3xl'>
+                                            Trifecta App Redesign
+                                        </a>
+                                    </p>
+
+                                    <a className='font-recoleta font-semibold text-purple'>
+                                        View{' '}
+                                        <Image
+                                            className='inline-block'
+                                            src='/images/ic_arrow.svg'
+                                            alt='view project'
+                                            height={24}
+                                            width={24}
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
