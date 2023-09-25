@@ -19,6 +19,8 @@ module.exports = {
             colors: {
                 purple: '#540D6E',
                 'menu-bg': '#353935',
+                orange: '#F7991E',
+                gray: '#060125',
             },
             container: {
                 center: true,
