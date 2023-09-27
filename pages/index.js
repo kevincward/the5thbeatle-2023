@@ -1,4 +1,9 @@
 import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+
 import caseStudiesBg from '../public/images/case-studies-background.svg';
 import projectsBg from '../public/images/ocean-background.svg';
 
@@ -37,63 +42,130 @@ export default function Home() {
                 </div>
             </div>
             <div
-                className='case-studies mt-4 h-[16.875rem] bg-cover bg-no-repeat lg:mt-20 lg:h-[40.9375rem]'
+                className='case-studies mt-4 h-[16.875rem] bg-cover bg-no-repeat lg:mt-24 lg:h-[40.9375rem]'
                 style={{
                     backgroundImage: `url(${caseStudiesBg.src})`,
                 }}
             >
-                <div className='container relative z-10 pl-3 pt-8 lg:px-0'>
-                    <div className='flex flex-row items-center'>
-                        <div class='mr-6 basis-1/3'>
+                <div className='relative z-10 pl-3 pt-8 lg:px-0 lg:pt-16'>
+                    <div className='flex w-full flex-row items-center'>
+                        <div className='mr-6 basis-1/3 lg:pr-16 lg:text-right'>
                             <p className='heading-decoration font-recoleta text-4xl font-semibold'>
                                 Case Studies
                             </p>
                         </div>
                         <div class='basis-2/3 overflow-x-auto'>
-                            <div className='flex'>
-                                <div className='case-study-card mr-3 w-[10.625rem] rounded bg-white p-6 drop-shadow lg:w-[21.875rem]'>
-                                    <p className='pb-8 lg:pb-10'>
-                                        <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-3xl'>
-                                            3 line title of case study project
+                            <Swiper
+                                navigation={{ nextEl: '.next-button' }}
+                                slidesPerView='auto'
+                                spaceBetween={20}
+                                modules={[Navigation]}
+                                className='case-studies-swiper'
+                            >
+                                <SwiperSlide>
+                                    <div className='case-study-card w-[170px] rounded bg-white p-6 drop-shadow lg:w-[350px]'>
+                                        <p className='pb-8 lg:pb-10'>
+                                            <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-3xl'>
+                                                3 line title of case study
+                                                project
+                                            </a>
+                                        </p>
+                                        <p className='pb-2 font-recoleta text-xl text-gray lg:pb-4'>
+                                            Trifecta
+                                        </p>
+                                        <div className='mb-2 h-[1px] w-[5.0625rem] bg-orange lg:mb-4'></div>
+                                        <a className='font-recoleta font-semibold text-purple'>
+                                            View Project{' '}
+                                            <Image
+                                                className='inline-block'
+                                                src='/images/ic_arrow.svg'
+                                                alt='view project'
+                                                height={24}
+                                                width={24}
+                                            />
                                         </a>
-                                    </p>
-                                    <p className='text-gray pb-2 font-recoleta text-xl lg:pb-4'>
-                                        Trifecta
-                                    </p>
-                                    <div className='bg-orange mb-2 h-[1px] w-[5.0625rem] lg:mb-4'></div>
-                                    <a className='font-recoleta font-semibold text-purple'>
-                                        View Project{' '}
-                                        <Image
-                                            className='inline-block'
-                                            src='/images/ic_arrow.svg'
-                                            alt='view project'
-                                            height={24}
-                                            width={24}
-                                        />
-                                    </a>
-                                </div>
-
-                                <div className='case-study-card w-[10.625rem] rounded bg-white p-6 drop-shadow lg:w-[21.875rem]'>
-                                    <p className='pb-8 lg:pb-10'>
-                                        <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-3xl'>
-                                            3 line title of case study project
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className='case-study-card w-[170px] rounded bg-white p-6 drop-shadow lg:w-[350px]'>
+                                        <p className='pb-8 lg:pb-10'>
+                                            <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-3xl'>
+                                                3 line title of case study
+                                                project
+                                            </a>
+                                        </p>
+                                        <p className='pb-2 font-recoleta text-xl text-gray lg:pb-4'>
+                                            Trifecta
+                                        </p>
+                                        <div className='mb-2 h-[1px] w-[5.0625rem] bg-orange lg:mb-4'></div>
+                                        <a className='font-recoleta font-semibold text-purple'>
+                                            View Project{' '}
+                                            <Image
+                                                className='inline-block'
+                                                src='/images/ic_arrow.svg'
+                                                alt='view project'
+                                                height={24}
+                                                width={24}
+                                            />
                                         </a>
-                                    </p>
-                                    <p className='text-gray pb-2 font-recoleta text-xl lg:pb-4'>
-                                        Trifecta
-                                    </p>
-                                    <div className='bg-orange mb-2 h-[1px] w-[5.0625rem] lg:mb-4'></div>
-                                    <a className='font-recoleta font-semibold text-purple'>
-                                        View Project{' '}
-                                        <Image
-                                            className='inline-block'
-                                            src='/images/ic_arrow.svg'
-                                            alt='view project'
-                                            height={24}
-                                            width={24}
-                                        />
-                                    </a>
-                                </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className='case-study-card w-[170px] rounded bg-white p-6 drop-shadow lg:w-[350px]'>
+                                        <p className='pb-8 lg:pb-10'>
+                                            <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-3xl'>
+                                                3 line title of case study
+                                                project
+                                            </a>
+                                        </p>
+                                        <p className='pb-2 font-recoleta text-xl text-gray lg:pb-4'>
+                                            Trifecta
+                                        </p>
+                                        <div className='mb-2 h-[1px] w-[5.0625rem] bg-orange lg:mb-4'></div>
+                                        <a className='font-recoleta font-semibold text-purple'>
+                                            View Project{' '}
+                                            <Image
+                                                className='inline-block'
+                                                src='/images/ic_arrow.svg'
+                                                alt='view project'
+                                                height={24}
+                                                width={24}
+                                            />
+                                        </a>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className='case-study-card w-[170px] rounded bg-white p-6 drop-shadow lg:w-[350px]'>
+                                        <p className='pb-8 lg:pb-10'>
+                                            <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-3xl'>
+                                                3 line title of case study
+                                                project
+                                            </a>
+                                        </p>
+                                        <p className='pb-2 font-recoleta text-xl text-gray lg:pb-4'>
+                                            Trifecta
+                                        </p>
+                                        <div className='mb-2 h-[1px] w-[5.0625rem] bg-orange lg:mb-4'></div>
+                                        <a className='font-recoleta font-semibold text-purple'>
+                                            View Project{' '}
+                                            <Image
+                                                className='inline-block'
+                                                src='/images/ic_arrow.svg'
+                                                alt='view project'
+                                                height={24}
+                                                width={24}
+                                            />
+                                        </a>
+                                    </div>
+                                </SwiperSlide>
+                            </Swiper>
+                            <div className='next-button absolute right-8 top-[50%] z-[999]'>
+                                <Image
+                                    src='/images/next-button.svg'
+                                    width={48}
+                                    height={48}
+                                    alt='next case study button'
+                                />
                             </div>
                         </div>
                     </div>
@@ -184,23 +256,23 @@ export default function Home() {
                     And picked up a few skills along the way
                 </h2>
                 <div className='flex flex-row justify-center pb-6 text-lg lg:pb-12'>
-                    <div className='border-r-orange border-r-2 px-6 py-2'>
-                        <a className='text-gray font-recoleta'>
+                    <div className='border-r-2 border-r-orange px-6 py-2'>
+                        <a className='font-recoleta text-gray'>
                             Research & Strategy
                         </a>
                     </div>
-                    <div className='border-r-orange border-r-2 px-6 py-2'>
-                        <a className='text-gray font-recoleta'>
+                    <div className='border-r-2 border-r-orange px-6 py-2'>
+                        <a className='font-recoleta text-gray'>
                             Design Thinking
                         </a>
                     </div>
-                    <div className='border-r-orange border-r-2 px-6 py-2'>
-                        <a className='text-gray font-recoleta'>
+                    <div className='border-r-2 border-r-orange px-6 py-2'>
+                        <a className='font-recoleta text-gray'>
                             Product Management
                         </a>
                     </div>
                     <div className='px-3 py-2'>
-                        <a className='text-gray font-recoleta'>
+                        <a className='font-recoleta text-gray'>
                             Business Growth
                         </a>
                     </div>
