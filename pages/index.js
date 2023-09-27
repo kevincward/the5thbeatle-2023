@@ -8,6 +8,29 @@ import caseStudiesBg from '../public/images/case-studies-background.svg';
 import projectsBg from '../public/images/ocean-background.svg';
 
 export default function Home() {
+    const caseStudies = [
+        {
+            title: '3 line title of case study project',
+            company: 'Trifecta',
+            url: '#',
+        },
+        {
+            title: '3 line title of case study project',
+            company: 'Thrive Global',
+            url: '#',
+        },
+        {
+            title: '3 line title of case study project',
+            company: 'PayPal',
+            url: '#',
+        },
+        {
+            title: '3 line title of case study project',
+            company: 'Engineered Medical Technologies',
+            url: '#',
+        },
+    ];
+
     return (
         <main className='pt-20'>
             <div className='container relative px-3'>
@@ -54,7 +77,7 @@ export default function Home() {
                                 Case Studies
                             </p>
                         </div>
-                        <div class='basis-2/3 overflow-x-auto'>
+                        <div className='basis-2/3 overflow-x-auto'>
                             <Swiper
                                 navigation={{ nextEl: '.next-button' }}
                                 slidesPerView='auto'
@@ -62,102 +85,34 @@ export default function Home() {
                                 modules={[Navigation]}
                                 className='case-studies-swiper'
                             >
-                                <SwiperSlide>
-                                    <div className='case-study-card w-[170px] rounded bg-white p-6 drop-shadow lg:w-[350px]'>
-                                        <p className='pb-8 lg:pb-10'>
-                                            <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-3xl'>
-                                                3 line title of case study
-                                                project
+                                {Object.keys(caseStudies).map((key) => (
+                                    <SwiperSlide key={key}>
+                                        <div className='case-study-card w-[170px] rounded bg-white p-6 drop-shadow lg:w-[350px]'>
+                                            <p className='pb-8 lg:pb-10'>
+                                                <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-3xl'>
+                                                    {caseStudies[key].title}
+                                                </a>
+                                            </p>
+                                            <p className='pb-2 font-recoleta text-xl text-gray lg:pb-4'>
+                                                {caseStudies[key].company}
+                                            </p>
+                                            <div className='mb-2 h-[1px] w-[5.0625rem] bg-orange lg:mb-4'></div>
+                                            <a
+                                                className='font-recoleta font-semibold text-purple'
+                                                href={caseStudies[key].url}
+                                            >
+                                                View Project{' '}
+                                                <Image
+                                                    className='inline-block'
+                                                    src='/images/ic_arrow.svg'
+                                                    alt='view project'
+                                                    height={24}
+                                                    width={24}
+                                                />
                                             </a>
-                                        </p>
-                                        <p className='pb-2 font-recoleta text-xl text-gray lg:pb-4'>
-                                            Trifecta
-                                        </p>
-                                        <div className='mb-2 h-[1px] w-[5.0625rem] bg-orange lg:mb-4'></div>
-                                        <a className='font-recoleta font-semibold text-purple'>
-                                            View Project{' '}
-                                            <Image
-                                                className='inline-block'
-                                                src='/images/ic_arrow.svg'
-                                                alt='view project'
-                                                height={24}
-                                                width={24}
-                                            />
-                                        </a>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className='case-study-card w-[170px] rounded bg-white p-6 drop-shadow lg:w-[350px]'>
-                                        <p className='pb-8 lg:pb-10'>
-                                            <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-3xl'>
-                                                3 line title of case study
-                                                project
-                                            </a>
-                                        </p>
-                                        <p className='pb-2 font-recoleta text-xl text-gray lg:pb-4'>
-                                            Trifecta
-                                        </p>
-                                        <div className='mb-2 h-[1px] w-[5.0625rem] bg-orange lg:mb-4'></div>
-                                        <a className='font-recoleta font-semibold text-purple'>
-                                            View Project{' '}
-                                            <Image
-                                                className='inline-block'
-                                                src='/images/ic_arrow.svg'
-                                                alt='view project'
-                                                height={24}
-                                                width={24}
-                                            />
-                                        </a>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className='case-study-card w-[170px] rounded bg-white p-6 drop-shadow lg:w-[350px]'>
-                                        <p className='pb-8 lg:pb-10'>
-                                            <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-3xl'>
-                                                3 line title of case study
-                                                project
-                                            </a>
-                                        </p>
-                                        <p className='pb-2 font-recoleta text-xl text-gray lg:pb-4'>
-                                            Trifecta
-                                        </p>
-                                        <div className='mb-2 h-[1px] w-[5.0625rem] bg-orange lg:mb-4'></div>
-                                        <a className='font-recoleta font-semibold text-purple'>
-                                            View Project{' '}
-                                            <Image
-                                                className='inline-block'
-                                                src='/images/ic_arrow.svg'
-                                                alt='view project'
-                                                height={24}
-                                                width={24}
-                                            />
-                                        </a>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className='case-study-card w-[170px] rounded bg-white p-6 drop-shadow lg:w-[350px]'>
-                                        <p className='pb-8 lg:pb-10'>
-                                            <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-3xl'>
-                                                3 line title of case study
-                                                project
-                                            </a>
-                                        </p>
-                                        <p className='pb-2 font-recoleta text-xl text-gray lg:pb-4'>
-                                            Trifecta
-                                        </p>
-                                        <div className='mb-2 h-[1px] w-[5.0625rem] bg-orange lg:mb-4'></div>
-                                        <a className='font-recoleta font-semibold text-purple'>
-                                            View Project{' '}
-                                            <Image
-                                                className='inline-block'
-                                                src='/images/ic_arrow.svg'
-                                                alt='view project'
-                                                height={24}
-                                                width={24}
-                                            />
-                                        </a>
-                                    </div>
-                                </SwiperSlide>
+                                        </div>
+                                    </SwiperSlide>
+                                ))}
                             </Swiper>
                             <div className='next-button absolute right-8 top-[50%] z-[999]'>
                                 <Image
