@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import { Transition } from '@headlessui/react';
+import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -6,6 +8,7 @@ import 'swiper/css/navigation';
 
 import caseStudiesBg from '../public/images/case-studies-background.svg';
 import projectsBg from '../public/images/ocean-background.svg';
+import submarine from '../public/images/yellow-submarine.svg';
 
 export default function Home() {
     const caseStudies = [
@@ -30,6 +33,54 @@ export default function Home() {
             url: '#',
         },
     ];
+
+    const skills = [
+        {
+            description:
+                'RESEARCH I work closely with users to understand their needs, pain points, and wants in order to generate usable products that solve real problems.',
+            title: 'research',
+        },
+        {
+            description:
+                'DESIGN I work closely with users to understand their needs, pain points, and wants in order to generate usable products that solve real problems.',
+            title: 'design',
+        },
+        {
+            description:
+                'PRODUCT I work closely with users to understand their needs, pain points, and wants in order to generate usable products that solve real problems.',
+            title: 'product',
+        },
+        {
+            description:
+                'BUSINESS I work closely with users to understand their needs, pain points, and wants in order to generate usable products that solve real problems.',
+            title: 'business',
+        },
+    ];
+
+    const projects = [
+        {
+            title: 'Trifecta App Redesign',
+            image: 'project-placeholder.svg',
+            url: '#',
+        },
+        {
+            title: 'Employee Analytics Dashboard',
+            image: 'project-placeholder.svg',
+            url: '#',
+        },
+        {
+            title: 'Marketing LP Components',
+            image: 'project-placeholder.svg',
+            url: '#',
+        },
+        {
+            title: 'tCheck App',
+            image: 'project-placeholder.svg',
+            url: '#',
+        },
+    ];
+
+    const [activeSkill, setActiveSkill] = useState(0);
 
     return (
         <main className='pt-20'>
@@ -206,166 +257,179 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className='skills container lg:py-12'>
+            <div className='skills mb-6 lg:py-12'>
                 <h2 className='pb-8 text-center font-recoleta text-4xl font-semibold'>
                     And picked up a few skills along the way
                 </h2>
-                <div className='flex flex-row justify-center pb-6 text-lg lg:pb-12'>
-                    <div className='border-r-2 border-r-orange px-6 py-2'>
-                        <a className='font-recoleta text-gray'>
-                            Research & Strategy
-                        </a>
+                <div className='text-l grid auto-cols-max grid-flow-col place-items-center overflow-x-auto pb-6 lg:place-content-center lg:overflow-x-auto lg:pb-12'>
+                    <div className='max-w-[140px] border-r-2 border-r-orange px-6 py-2 text-center lg:max-w-none'>
+                        <button
+                            className='block font-recoleta text-gray'
+                            onClick={() => setActiveSkill(0)}
+                        >
+                            UX Research & Strategy
+                        </button>
                     </div>
-                    <div className='border-r-2 border-r-orange px-6 py-2'>
-                        <a className='font-recoleta text-gray'>
+                    <div className='max-w-[140px] border-r-2 border-r-orange px-6 py-2 text-center lg:max-w-none'>
+                        <button
+                            onClick={() => setActiveSkill(1)}
+                            className='font-recoleta text-gray'
+                        >
                             Design Thinking
-                        </a>
+                        </button>
                     </div>
-                    <div className='border-r-2 border-r-orange px-6 py-2'>
-                        <a className='font-recoleta text-gray'>
+                    <div className='max-w-[140px] border-r-2 border-r-orange px-6 py-2 text-center lg:max-w-none'>
+                        <button
+                            onClick={() => setActiveSkill(2)}
+                            className='font-recoleta text-gray'
+                        >
                             Product Management
-                        </a>
+                        </button>
                     </div>
-                    <div className='px-3 py-2'>
-                        <a className='font-recoleta text-gray'>
+                    <div className='max-w-[140px] px-3 py-2 text-center lg:max-w-none'>
+                        <button
+                            onClick={() => setActiveSkill(3)}
+                            className='font-recoleta text-gray'
+                        >
                             Business Growth
-                        </a>
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <div className='mx-auto h-[360px] max-w-[1012px]'>
+                        <div className='flex flex-wrap px-3 lg:items-end'>
+                            <div className='mb-3 lg:mb-0 lg:basis-2/3 lg:pr-12'>
+                                <Image
+                                    src={`/images/ux-${skills[activeSkill].title}-image.svg`}
+                                    alt='Kevin Ward UX Research & Strategy Skills'
+                                    width={688}
+                                    height={360}
+                                />
+                            </div>
+                            <div className='lg:basis-1/3'>
+                                <Image
+                                    src={`images/ic_skill-${skills[activeSkill].title}.svg`}
+                                    width={40}
+                                    height={40}
+                                    alt='UX Research and Strategy Icon'
+                                    className='mb-4 hidden lg:block'
+                                />
+                                <p className='pb-6 lg:pb-12'>
+                                    {skills[activeSkill].description}
+                                </p>
+                                <div className='flex justify-center lg:justify-start'>
+                                    <button className='mr-3'>
+                                        <Image
+                                            src='/images/previous-button.svg'
+                                            width={48}
+                                            height={48}
+                                            alt='next case study button'
+                                            onClick={() => {
+                                                const total = skills.length - 1;
+
+                                                if (activeSkill === 0) {
+                                                    setActiveSkill(total);
+                                                } else {
+                                                    setActiveSkill(
+                                                        activeSkill - 1,
+                                                    );
+                                                }
+                                            }}
+                                        />
+                                    </button>
+                                    <button>
+                                        <Image
+                                            src='/images/next-button.svg'
+                                            width={48}
+                                            height={48}
+                                            alt='next case study button'
+                                            onClick={() => {
+                                                const total = skills.length - 1;
+                                                if (activeSkill === total) {
+                                                    setActiveSkill(0);
+                                                } else {
+                                                    setActiveSkill(
+                                                        activeSkill + 1,
+                                                    );
+                                                }
+                                            }}
+                                        />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div className='projects'>
                 <div
-                    className='h-[10.81219rem] bg-cover bg-no-repeat lg:h-[21.64775rem]'
+                    className='h-[100px] bg-cover bg-no-repeat lg:h-[21.64775rem]'
                     style={{
                         backgroundImage: `url(${projectsBg.src})`,
                     }}
                 ></div>
-                <div className='relative bg-[#50C1E2]  pb-16'>
+                <div
+                    className='relative bg-[#50C1E2] bg-no-repeat pb-16 lg:bg-none'
+                    style={{
+                        backgroundImage: `url(${submarine.src})`,
+                        backgroundSize: '169px 95px',
+                        backgroundPosition: 'right 50px',
+                    }}
+                >
                     <Image
                         src='/images/yellow-submarine.svg'
                         alt='yellow submarine'
-                        className='absolute right-0 top-0 lg:-top-20'
+                        className='absolute right-[100px] top-0 hidden lg:-top-20 lg:inline-block'
                         width={317}
                         height={177}
                     />
-                    <div className='container'>
+                    <div className='relative mx-auto max-w-[1040px] px-3'>
                         <h2 className='pb-8 font-recoleta text-4xl font-semibold'>
                             While working on different projects
                         </h2>
 
-                        <div className='grid grid-cols-1 gap-4 lg:grid-cols-2'>
-                            <div className='relative mb-16'>
-                                <Image
-                                    className='inline-block'
-                                    src='/images/project-placeholder.svg'
-                                    alt='view project'
-                                    height={264}
-                                    width={264}
-                                />
-                                <div className='project-card absolute -bottom-10 right-0 mr-3 rounded bg-white p-6 drop-shadow'>
-                                    <p className='pb-4'>
-                                        <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-3xl'>
-                                            Trifecta App Redesign
-                                        </a>
-                                    </p>
-
-                                    <a className='font-recoleta font-semibold text-purple'>
-                                        View{' '}
+                        <div className='grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-4'>
+                            {Object.keys(projects).map((key) => (
+                                <div
+                                    key={key}
+                                    className='relative flex items-center lg:mb-12 lg:h-[264px] lg:items-end'
+                                >
+                                    <div className='basis-1/4'>
                                         <Image
-                                            className='inline-block'
-                                            src='/images/ic_arrow.svg'
+                                            className='inline-block w-[96px] lg:absolute lg:top-0 lg:w-[264px]'
+                                            src={`/images/${projects[key].image}`}
                                             alt='view project'
-                                            height={24}
-                                            width={24}
+                                            height={264}
+                                            width={264}
                                         />
-                                    </a>
+                                    </div>
+                                    <div className='basis-3/4 lg:pr-8'>
+                                        <div className='project-card ml-2 rounded bg-white p-4 drop-shadow lg:-mb-10'>
+                                            <p className='pb-4'>
+                                                <a className='font-recoleta text-[1.3125rem] font-semibold leading-5'>
+                                                    {projects[key].title}
+                                                </a>
+                                            </p>
+
+                                            <a
+                                                className='font-recoleta font-semibold text-purple'
+                                                href={projects[key].url}
+                                            >
+                                                View{' '}
+                                                <Image
+                                                    className='inline-block'
+                                                    src='/images/ic_arrow.svg'
+                                                    alt='view project'
+                                                    height={24}
+                                                    width={24}
+                                                />
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div className='relative mb-16'>
-                                <Image
-                                    className='inline-block'
-                                    src='/images/project-placeholder.svg'
-                                    alt='view project'
-                                    height={264}
-                                    width={264}
-                                />
-                                <div className='project-card absolute -bottom-10 right-0 mr-3 rounded bg-white p-6 drop-shadow'>
-                                    <p className='pb-4'>
-                                        <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-3xl'>
-                                            Trifecta App Redesign
-                                        </a>
-                                    </p>
-
-                                    <a className='font-recoleta font-semibold text-purple'>
-                                        View{' '}
-                                        <Image
-                                            className='inline-block'
-                                            src='/images/ic_arrow.svg'
-                                            alt='view project'
-                                            height={24}
-                                            width={24}
-                                        />
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div className='relative mb-16'>
-                                <Image
-                                    className='inline-block'
-                                    src='/images/project-placeholder.svg'
-                                    alt='view project'
-                                    height={264}
-                                    width={264}
-                                />
-                                <div className='project-card absolute -bottom-10 right-0 mr-3 rounded bg-white p-6 drop-shadow'>
-                                    <p className='pb-4'>
-                                        <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-3xl'>
-                                            Trifecta App Redesign
-                                        </a>
-                                    </p>
-
-                                    <a className='font-recoleta font-semibold text-purple'>
-                                        View{' '}
-                                        <Image
-                                            className='inline-block'
-                                            src='/images/ic_arrow.svg'
-                                            alt='view project'
-                                            height={24}
-                                            width={24}
-                                        />
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div className='relative mb-16'>
-                                <Image
-                                    className='inline-block'
-                                    src='/images/project-placeholder.svg'
-                                    alt='view project'
-                                    height={264}
-                                    width={264}
-                                />
-                                <div className='project-card absolute -bottom-10 right-0 mr-3 rounded bg-white p-6 drop-shadow'>
-                                    <p className='pb-4'>
-                                        <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-3xl'>
-                                            Trifecta App Redesign
-                                        </a>
-                                    </p>
-
-                                    <a className='font-recoleta font-semibold text-purple'>
-                                        View{' '}
-                                        <Image
-                                            className='inline-block'
-                                            src='/images/ic_arrow.svg'
-                                            alt='view project'
-                                            height={24}
-                                            width={24}
-                                        />
-                                    </a>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>
