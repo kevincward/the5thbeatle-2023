@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+	max-width: 650px;
+}
+
+.heading-decoration {
+	text-shadow: 1px 1px 0px #EF4266, 0px 2px 0px #F7991E, 0px 4px 0px #FFD23E;
+}
+
+.case-studies-swiper {
+	.swiper-slide {
+		width: auto !important;
+	}
+}
