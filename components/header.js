@@ -48,10 +48,14 @@ export default function Header() {
                                 <a>Work</a>
                             </div>
                             <div className='pr-5 font-recoleta font-bold lg:pr-20'>
-                                <a>About</a>
+                                <a
+                                    href='/about'
+                                >About</a>
                             </div>
                             <div className='font-recoleta font-bold'>
-                                <a>Resume</a>
+                                <a
+                                    href='https://drive.google.com/file/d/1N1IttPv_fevsnSUZ5rXSlU0xVCEWgntp/view'
+                                >Resume</a>
                             </div>
                         </div>
                     </div>
