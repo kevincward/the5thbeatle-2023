@@ -2,10 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-header {
-  max-width: 650px;
-}
-
 .heading-decoration {
   text-shadow: 0px 2px 0px #F7991E, 0px 4px 0px #FFD23E;
 }
@@ -15,3 +11,9 @@ header {
 		width: auto !important;
 	}
 }
+
+.sticky-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+  }
