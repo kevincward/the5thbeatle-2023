@@ -1,6 +1,7 @@
-import { useState, Fragment } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
-import { Dialog, Transition } from '@headlessui/react';
+import Link from 'next/link';
+import { Dialog } from '@headlessui/react';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -48,14 +49,12 @@ export default function Header() {
                                 <a>Work</a>
                             </div>
                             <div className='pr-5 font-recoleta font-bold lg:pr-20'>
-                                <a
-                                    href='/about'
-                                >About</a>
+                                <Link href='/about'>About</Link>
                             </div>
                             <div className='font-recoleta font-bold'>
-                                <a
-                                    href='https://drive.google.com/file/d/1N1IttPv_fevsnSUZ5rXSlU0xVCEWgntp/view'
-                                >Resume</a>
+                                <a href='https://drive.google.com/file/d/1N1IttPv_fevsnSUZ5rXSlU0xVCEWgntp/view'>
+                                    Resume
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +74,7 @@ export default function Header() {
                 onClose={() => setIsOpen(true)}
                 className='relative z-10'
             >
-                <div className='bg-menu-bg fixed inset-0' aria-hidden='true' />
+                <div className='fixed inset-0 bg-menu-bg' aria-hidden='true' />
 
                 <div className='fixed inset-0 w-screen justify-center px-3 pt-5'>
                     <Dialog.Panel>
@@ -126,7 +125,12 @@ export default function Header() {
                                 <a className='text-3xl text-white'>Work</a>
                             </div>
                             <div>
-                                <a className='text-3xl text-white'>About</a>
+                                <Link
+                                    href='/about'
+                                    className='text-3xl text-white'
+                                >
+                                    About
+                                </Link>
                             </div>
                             <div>
                                 <a className='text-3xl text-white'>Resume</a>
