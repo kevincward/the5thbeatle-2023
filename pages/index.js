@@ -84,7 +84,7 @@ export default function Home() {
 
     return (
         <main className='pt-20'>
-            <div className='container relative px-3'>
+            <div className='container relative'>
                 <div className='flex'>
                     <div className='lg:basis-1/2'>
                         <h1 className='pb-5 font-recoleta text-4xl font-semibold'>

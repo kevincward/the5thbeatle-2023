@@ -23,10 +23,16 @@ module.exports = {
                 orange: '#F7991E',
                 gray: '#514D66',
                 black: '#060125',
-                red: '#EF4266'
+                red: '#EF4266',
             },
             container: {
                 center: true,
+                padding: '1rem',
+                screens: {
+                    lg: '1040px',
+                    xl: '1040px',
+                    '2xl': '1040px',
+                },
             },
         },
     },
