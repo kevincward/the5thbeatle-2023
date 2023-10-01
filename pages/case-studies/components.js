@@ -2,6 +2,7 @@ import TitleBlock from '@/components/titleBlock';
 import ParallaxBlock from '@/components/parallaxBlock';
 import ContextCard from '@/components/contextCard';
 import SecondaryNav from '@/components/secondaryNav';
+import TextBlockOne from '@/components/textBlockOne';
 
 export default function Components() {
     return (
@@ -31,6 +32,72 @@ export default function Components() {
                     teammates: 'Product manager, Product marketing manager',
                     timeline: 'Nov 2020 - Jan 2021',
                 }}
+            />
+            <TextBlockOne
+                kicker='Kicker'
+                title='Title'
+                aboveContent='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                belowContent='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                images={[
+                    {
+                        desktop: '/images/desktop-text-block-one-image.svg',
+                        mobile: '/images/mobile-text-block-one-image.svg',
+                        alt: 'Placeholder image',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: 'Caption',
+                    },
+                    {
+                        desktop: '/images/desktop-text-block-one-image.svg',
+                        mobile: '/images/mobile-text-block-one-image.svg',
+                        alt: 'Placeholder image',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: 'Caption',
+                    },
+                ]}
+            />
+            <TextBlockOne
+                images={[
+                    {
+                        desktop: '/images/desktop-text-block-one-image.svg',
+                        mobile: '/images/mobile-text-block-one-image.svg',
+                        alt: 'Placeholder image',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: 'Caption',
+                    },
+                ]}
+            />
+            <TextBlockOne
+                images={[
+                    {
+                        desktop: '/images/desktop-text-block-one-image.svg',
+                        mobile: '/images/mobile-text-block-one-image.svg',
+                        alt: 'Placeholder image',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: 'Caption',
+                    },
+                    {
+                        desktop: '/images/desktop-text-block-one-image.svg',
+                        mobile: '/images/mobile-text-block-one-image.svg',
+                        alt: 'Placeholder image',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: 'Caption',
+                    },
+                ]}
             />
             <div className='container'>
                 <div className='scroll-mt-[152px] pb-20' id='section-1'>
