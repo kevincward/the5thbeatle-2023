@@ -5,6 +5,7 @@ import SecondaryNav from '@/components/secondaryNav';
 import TextBlockOne from '@/components/textBlockOne';
 import TextBlockTwo from '@/components/textBlockTwo';
 import ProblemCard from '@/components/problemCard';
+import Results from '@/components/results';
 
 export default function Components() {
     return (
@@ -117,6 +118,34 @@ export default function Components() {
                 backgroundColor='#FCD9E0'
                 textColor='#782133'
                 content='How might we craft an engaging challenge experience that propels users to achieve their goals?'
+            />
+            <Results
+                kicker='Kicker'
+                title='Title'
+                values={[
+                    {
+                        start: 0,
+                        end: 73,
+                        suffix: '%',
+                        prefix: '',
+                        title: 'Lorem ipsum dolor',
+                    },
+                    {
+                        start: 0,
+                        end: 25,
+                        suffix: '%',
+                        prefix: '',
+                        title: 'Lorem ipsum dolor',
+                    },
+                    {
+                        start: 0,
+                        end: 100,
+                        suffix: '',
+                        prefix: '$',
+                        title: 'Lorem ipsum dolor',
+                    },
+                ]}
+                text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
             />
             <div className='container'>
                 <div className='scroll-mt-[152px] pb-20' id='section-1'>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, Fragment } from 'react';
 import Image from 'next/image';
 import { Dialog } from '@headlessui/react';
 
@@ -31,8 +31,8 @@ export default function TextBlockOne(props) {
 
                 <div className='flex gap-4'>
                     {Object.keys(images).map((key) => (
-                        <>
-                            <div key={key}>
+                        <Fragment key={key}>
+                            <div>
                                 <a onClick={() => setIsOpen(true)}>
                                     <Image
                                         src={images[key].desktop}
@@ -101,7 +101,7 @@ export default function TextBlockOne(props) {
                                     </Dialog.Panel>
                                 </div>
                             </Dialog>
-                        </>
+                        </Fragment>
                     ))}
                 </div>
 
