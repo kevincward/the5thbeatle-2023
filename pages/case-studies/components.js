@@ -4,6 +4,7 @@ import ContextCard from '@/components/contextCard';
 import SecondaryNav from '@/components/secondaryNav';
 import TextBlockOne from '@/components/textBlockOne';
 import TextBlockTwo from '@/components/textBlockTwo';
+import ProblemCard from '@/components/problemCard';
 
 export default function Components() {
     return (
@@ -111,6 +112,11 @@ export default function Components() {
                     height: 605,
                     caption: 'caption',
                 }}
+            />
+            <ProblemCard
+                backgroundColor='#FCD9E0'
+                textColor='#782133'
+                content='How might we craft an engaging challenge experience that propels users to achieve their goals?'
             />
             <div className='container'>
                 <div className='scroll-mt-[152px] pb-20' id='section-1'>
