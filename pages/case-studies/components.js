@@ -3,6 +3,7 @@ import ParallaxBlock from '@/components/parallaxBlock';
 import ContextCard from '@/components/contextCard';
 import SecondaryNav from '@/components/secondaryNav';
 import TextBlockOne from '@/components/textBlockOne';
+import TextBlockTwo from '@/components/textBlockTwo';
 
 export default function Components() {
     return (
@@ -98,6 +99,18 @@ export default function Components() {
                         caption: 'Caption',
                     },
                 ]}
+            />
+            <TextBlockTwo
+                kicker='Kicker'
+                title='Title'
+                content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                image={{
+                    url: '/images/text-block-two-image.svg',
+                    alt: 'placeholder image',
+                    width: 536,
+                    height: 605,
+                    caption: 'caption',
+                }}
             />
             <div className='container'>
                 <div className='scroll-mt-[152px] pb-20' id='section-1'>
