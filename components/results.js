@@ -18,11 +18,11 @@ export default function Results(props) {
             ) : (
                 ''
             )}
-            <div className='flex flex-col lg:flex-row'>
+            <div className='flex flex-col lg:flex-row lg:justify-center'>
                 {Object.keys(values).map((key) => (
                     <div
                         key={key}
-                        className='mb-4 text-center text-5xl font-bold'
+                        className='mb-4 text-center text-5xl font-bold lg:px-4'
                     >
                         <CountUp
                             enableScrollSpy

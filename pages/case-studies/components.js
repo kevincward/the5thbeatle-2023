@@ -6,8 +6,32 @@ import TextBlockOne from '@/components/textBlockOne';
 import TextBlockTwo from '@/components/textBlockTwo';
 import ProblemCard from '@/components/problemCard';
 import Results from '@/components/results';
+import MoreStudies from '@/components/moreStudies';
 
 export default function Components() {
+    const caseStudies = [
+        {
+            title: '3 line title of case study project',
+            company: 'Trifecta',
+            url: '#',
+        },
+        {
+            title: '3 line title of case study project',
+            company: 'Thrive Global',
+            url: '#',
+        },
+        {
+            title: '3 line title of case study project',
+            company: 'PayPal',
+            url: '#',
+        },
+        {
+            title: '3 line title of case study project',
+            company: 'Engineered Medical Technologies',
+            url: '#',
+        },
+    ];
+
     return (
         <>
             <TitleBlock
@@ -147,6 +171,7 @@ export default function Components() {
                 ]}
                 text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
             />
+            <MoreStudies title='More Case Studies' caseStudies={caseStudies} />
             <div className='container'>
                 <div className='scroll-mt-[152px] pb-20' id='section-1'>
                     <h2>Section 1</h2>
