@@ -37,7 +37,10 @@ export default function Results(props) {
                     </div>
                 ))}
             </div>
-            <p className='text-[1.125rem]'>{text}</p>
+            <p
+                className='text-[1.125rem]'
+                dangerouslySetInnerHTML={{ __html: text }}
+            ></p>
         </div>
     );
 }

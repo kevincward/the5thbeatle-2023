@@ -18,9 +18,11 @@ export default function ContextCard(props) {
                     ''
                 )}
 
-                <p className='pb-6 text-lg ' style={{ color: textColor }}>
-                    {content.description}
-                </p>
+                <p
+                    className='pb-6 text-lg '
+                    style={{ color: textColor }}
+                    dangerouslySetInnerHTML={{ __html: content.description }}
+                ></p>
                 <div className='flex-column flex flex-wrap lg:flex-row'>
                     <div className='basis-full lg:basis-1/2'>
                         <div className='pb-6 lg:pr-6'>

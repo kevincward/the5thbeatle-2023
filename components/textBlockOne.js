@@ -10,7 +10,7 @@ export default function TextBlockOne(props) {
         <>
             <div className='container pb-3'>
                 {kicker && kicker !== '' ? (
-                    <p className='pb-2 text-xs uppercase text-gray'>Kicker</p>
+                    <p className='pb-2 text-xs uppercase text-gray'>{kicker}</p>
                 ) : (
                     ''
                 )}
@@ -24,7 +24,10 @@ export default function TextBlockOne(props) {
                 )}
 
                 {aboveContent && aboveContent !== '' ? (
-                    <p className='mb-3 text-base'>{aboveContent}</p>
+                    <p
+                        className='mb-3 text-base'
+                        dangerouslySetInnerHTML={{ __html: aboveContent }}
+                    ></p>
                 ) : (
                     ''
                 )}
@@ -52,7 +55,7 @@ export default function TextBlockOne(props) {
                                     />
                                 </a>
                                 {images[key].caption &&
-                                images[key].caption !== '' ? (
+                                    images[key].caption !== '' ? (
                                     <div className='block pt-2 text-center text-sm text-gray'>
                                         {images[key].caption}
                                     </div>
@@ -106,7 +109,10 @@ export default function TextBlockOne(props) {
                 </div>
 
                 {belowContent && belowContent !== '' ? (
-                    <p className='pt-1 text-base'>{belowContent}</p>
+                    <p
+                        className='pt-1 text-base'
+                        dangerouslySetInnerHTML={{ __html: belowContent }}
+                    ></p>
                 ) : (
                     ''
                 )}

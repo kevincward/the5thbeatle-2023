@@ -9,9 +9,8 @@ export default function ProblemCard(props) {
                 <p
                     className='font-recoleta text-3xl font-semibold lg:text-4xl'
                     style={{ color: textColor }}
-                >
-                    {content}
-                </p>
+                    dangerouslySetInnerHTML={{ __html: content }}
+                ></p>
             </div>
         </div>
     );

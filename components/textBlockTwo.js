@@ -54,7 +54,10 @@ export default function TextBlockTwo(props) {
                     )}
 
                     {content && content !== '' ? (
-                        <p className='my-3 text-base'>{content}</p>
+                        <p
+                            className='my-3 text-base'
+                            dangerouslySetInnerHTML={{ __html: content }}
+                        ></p>
                     ) : (
                         ''
                     )}

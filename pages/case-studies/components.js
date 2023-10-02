@@ -36,7 +36,7 @@ export default function Components() {
         <>
             <TitleBlock
                 kicker='Kicker'
-                title='Course correcting a product to drive a culture of continuous improvement'
+                title='Components Rundown'
             />
             <SecondaryNav
                 sectionOneTitle='Overview'
@@ -98,7 +98,7 @@ export default function Components() {
                         desktopHeight: 230,
                         mobileWidth: 382,
                         mobileHeight: 230,
-                        caption: 'Caption',
+                        caption: 'Second line image',
                     },
                 ]}
             />
