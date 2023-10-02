@@ -5,19 +5,19 @@ export default function MoreStudies(props) {
     const { title, caseStudies } = props;
     return (
         <div
-            className='title-block bg-[left_bottom_-100px] py-24 lg:bg-left-bottom'
+            className='bg-left-bottom py-12'
             style={{
                 backgroundImage: `url(${moreStudiesBg.src})`,
                 backgroundRepeat: 'no-repeat',
             }}
         >
-            <div className='container'>
+            <div className='pl-3 lg:container lg:pl-0'>
                 <p className='font-recoleta text-3xl font-semibold'>{title}</p>
 
-                <div className='flex gap-4 overflow-x-auto lg:grid lg:grid-cols-2 lg:flex-row lg:flex-wrap lg:overflow-x-hidden'>
+                <div className='flex gap-2 overflow-x-auto lg:grid lg:grid-cols-2 lg:flex-row lg:flex-wrap lg:gap-4 lg:overflow-x-hidden'>
                     {Object.keys(caseStudies).map((key) => (
                         <div className='p-2' key={key}>
-                            <div className='case-study-card w-[170px] rounded bg-white p-6 shadow-md lg:w-auto'>
+                            <div className='case-study-card w-[278px] rounded bg-white p-6 shadow-md lg:w-auto'>
                                 <p className='pb-8 lg:pb-10'>
                                     <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-3xl'>
                                         {caseStudies[key].title}
