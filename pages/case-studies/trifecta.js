@@ -100,7 +100,7 @@ export default function Trifecta() {
                         desktopHeight: 230,
                         mobileWidth: 382,
                         mobileHeight: 230,
-                        caption: 'Product design documentation in Confluence',
+                        caption: 'Product design documentation',
                     },
                 ]}
             />
@@ -233,8 +233,8 @@ export default function Trifecta() {
             <TextBlockOne
                 images={[
                     {
-                        desktop: '/images/text-block-two-image.svg',
-                        mobile: '/images/text-block-two-image.svg',
+                        desktop: 'trifecta-featured-work-3.gif',
+                        mobile: 'trifecta-featured-work-3.gif',
                         alt: 'Mobile cart expansion animation',
                         desktopWidth: 1040,
                         desktopHeight: 230,

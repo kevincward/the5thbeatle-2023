@@ -20,17 +20,12 @@ export default function Home() {
         {
             title: 'Fostering camaraderie for app retention',
             company: 'Thrive Global',
-            url: '#',
+            url: '/case-studies/thrive',
         },
         {
             title: 'Refreshing a product to encourage self-growth',
             company: 'Reflektive',
-            url: '#',
-        },
-        {
-            title: '3 line title of case study project',
-            company: 'PayPal',
-            url: '#',
+            url: '/case-studies/reflektive',
         },
     ];
 
@@ -94,7 +89,7 @@ export default function Home() {
                             While my band is on hiatus, I&apos;m focused on
                             designing meaningful products.
                         </p>
-                        <p className='text-xl'>
+                        <p className='text-xl' id="anchor-cs">
                             Principal Product Designer at{' '}
                             <a
                                 className='font-recoleta text-purple'
@@ -133,6 +128,7 @@ export default function Home() {
                                 navigation={{ nextEl: '.next-button' }}
                                 slidesPerView='auto'
                                 spaceBetween={20}
+                                loop={true}
                                 modules={[Navigation]}
                                 className='case-studies-swiper'
                             >
@@ -183,76 +179,92 @@ export default function Home() {
                 </h2>
                 <div className='mx-auto grid max-w-[42rem] grid-cols-4 gap-4 gap-x-0 lg:grid-cols-8'>
                     <div className='w-100 text-center'>
-                        <Image
-                            src='/images/trifecta-app-icon.svg'
-                            alt='Trifecta Icon'
-                            height={56}
-                            width={56}
-                            className='inline-block'
-                        />
+                        <div className='hover:animate-pulse ease-in-out'>
+                            <Image
+                                src='/images/trifecta-app-icon.svg'
+                                alt='Trifecta'
+                                height={56}
+                                width={56}
+                                className='inline-block'
+                            />
+                        </div>
                     </div>
                     <div className='w-100 text-center'>
-                        <Image
-                            src='/images/paypal-icon.svg'
-                            alt='PayPal Icon'
-                            height={56}
-                            width={56}
-                            className='inline-block'
-                        />
+                        <div className='hover:animate-pulse ease-in-out'>
+                            <Image
+                                src='/images/paypal-icon.svg'
+                                alt='PayPal'
+                                height={56}
+                                width={56}
+                                className='inline-block'
+                            />
+                        </div>
                     </div>
                     <div className='w-100 text-center'>
-                        <Image
-                            src='/images/group-34-icon.svg'
-                            alt='Icon'
-                            height={56}
-                            width={56}
-                            className='inline-block'
-                        />
+                        <div className='hover:animate-pulse ease-in-out'>
+                            <Image
+                                src='/images/group-34-icon.svg'
+                                alt='Reflektive'
+                                height={56}
+                                width={56}
+                                className='inline-block'
+                            />
+                        </div>
                     </div>
                     <div className='w-100 text-center'>
-                        <Image
-                            src='/images/group-44-icon.svg'
-                            alt='Icon'
-                            height={56}
-                            width={56}
-                            className='inline-block'
-                        />
+                        <div className='hover:animate-pulse ease-in-out'>
+                            <Image
+                                src='/images/group-44-icon.svg'
+                                alt='NationBuilder'
+                                height={56}
+                                width={56}
+                                className='inline-block'
+                            />
+                        </div>
                     </div>
                     <div className='w-100 text-center'>
-                        <Image
-                            src='/images/tcheck-icon.svg'
-                            alt='Tcheck Icon'
-                            height={56}
-                            width={56}
-                            className='inline-block'
-                        />
+                        <div className='hover:animate-pulse ease-in-out'>
+                            <Image
+                                src='/images/tcheck-icon.svg'
+                                alt='tCheck'
+                                height={56}
+                                width={56}
+                                className='inline-block'
+                            />
+                        </div>
                     </div>
                     <div className='w-100 text-center'>
-                        <Image
-                            src='/images/group-43-icon.svg'
-                            alt='Icon'
-                            height={56}
-                            width={56}
-                            className='inline-block'
-                        />
+                        <div className='hover:animate-pulse ease-in-out'>
+                            <Image
+                                src='/images/group-43-icon.svg'
+                                alt='Thrive Global'
+                                height={56}
+                                width={56}
+                                className='inline-block'
+                            />
+                        </div>
                     </div>
                     <div className='w-100 text-center'>
-                        <Image
-                            src='/images/venmo-icon.svg'
-                            alt='Venmo Icon'
-                            height={56}
-                            width={56}
-                            className='inline-block'
-                        />
+                        <div className='hover:animate-pulse ease-in-out'>
+                            <Image
+                                src='/images/venmo-icon.svg'
+                                alt='Venmo'
+                                height={56}
+                                width={56}
+                                className='inline-block'
+                            />
+                        </div>
                     </div>
                     <div className='w-100 text-center'>
-                        <Image
-                            src='/images/group-35-icon.svg'
-                            alt='Icon'
-                            height={56}
-                            width={56}
-                            className='inline-block'
-                        />
+                        <div className='hover:animate-pulse ease-in-out'>
+                            <Image
+                                src='/images/group-35-icon.svg'
+                                alt='Daysheets'
+                                height={56}
+                                width={56}
+                                className='inline-block'
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

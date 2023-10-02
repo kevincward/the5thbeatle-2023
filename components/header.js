@@ -8,9 +8,8 @@ export default function Header() {
 
     return (
         <header
-            className={`sticky top-0 z-[999] ${
-                isOpen ? 'bg-menu-bg' : 'bg-white'
-            }`}
+            className={`sticky top-0 z-[999] ${isOpen ? 'bg-menu-bg' : 'bg-white'
+                }`}
         >
             <div className='mx-auto max-w-[650px]'>
                 <div className='px-3 py-5'>
@@ -57,7 +56,7 @@ export default function Header() {
                             </Link>
                             <div className='hidden items-center lg:flex'>
                                 <div className='pr-5 font-recoleta font-bold lg:pr-20'>
-                                    <a>Work</a>
+                                    <Link href='/#anchor-cs'>Work</Link>
                                 </div>
                                 <div className='pr-5 font-recoleta font-bold lg:pr-20'>
                                     <Link href='/about'>About</Link>

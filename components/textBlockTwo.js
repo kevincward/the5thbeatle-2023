@@ -24,16 +24,16 @@ export default function TextBlockTwo(props) {
                 <div className='lg:basis-1/2'>
                     {kicker && kicker !== '' ? (
                         <p className='pb-2 text-xs uppercase text-gray'>
-                            Kicker
+                            {kicker}
                         </p>
                     ) : (
                         ''
                     )}
 
                     {title && title !== '' ? (
-                        <p className='pb-3 font-recoleta text-3xl font-semibold'>
-                            {title}
-                        </p>
+                        <p className='pb-3 font-recoleta text-3xl font-semibold'
+                            dangerouslySetInnerHTML={{ __html: title }}
+                        ></p>
                     ) : (
                         ''
                     )}
