@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 export default function About() {
     return (
-        <div className='container px-3 py-6 lg:px-0'>
-            <div className='grid grid-cols-1 gap-4 lg:grid-cols-2'>
+        <div className='container py-12 lg:py-24'>
+            <div className='grid grid-cols-1 items-center gap-8 lg:grid-cols-2'>
                 <div>
                     <Image
                         src='/images/about-image.jpg'
