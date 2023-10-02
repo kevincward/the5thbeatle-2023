@@ -19,7 +19,7 @@ export default function MoreStudies(props) {
                         <div className='p-2' key={key}>
                             <div className='case-study-card w-[278px] rounded bg-white p-6 shadow-md lg:w-auto'>
                                 <p className='pb-8 lg:pb-10'>
-                                    <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-3xl'>
+                                    <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-2xl'>
                                         {caseStudies[key].title}
                                     </a>
                                 </p>

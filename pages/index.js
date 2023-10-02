@@ -13,13 +13,18 @@ import submarine from '../public/images/yellow-submarine.svg';
 export default function Home() {
     const caseStudies = [
         {
-            title: '3 line title of case study project',
+            title: 'Building design into a key business asset',
             company: 'Trifecta',
+            url: '/case-studies/trifecta',
+        },
+        {
+            title: 'Fostering camaraderie for app retention',
+            company: 'Thrive Global',
             url: '#',
         },
         {
-            title: '3 line title of case study project',
-            company: 'Thrive Global',
+            title: 'Refreshing a product to encourage self-growth',
+            company: 'Reflektive',
             url: '#',
         },
         {
@@ -27,32 +32,27 @@ export default function Home() {
             company: 'PayPal',
             url: '#',
         },
-        {
-            title: '3 line title of case study project',
-            company: 'Engineered Medical Technologies',
-            url: '#',
-        },
     ];
 
     const skills = [
         {
             description:
-                'RESEARCH I work closely with users to understand their needs, pain points, and wants in order to generate usable products that solve real problems.',
+                'I work closely with users to understand their needs, pain points, and wants in order to generate usable products that solve real problems.',
             title: 'research',
         },
         {
             description:
-                'DESIGN I work closely with users to understand their needs, pain points, and wants in order to generate usable products that solve real problems.',
+                'I implement an iterative process to uncover new outlooks and redefine problems in an attempt to identify alternative strategies and solutions.',
             title: 'design',
         },
         {
             description:
-                'PRODUCT I work closely with users to understand their needs, pain points, and wants in order to generate usable products that solve real problems.',
+                'Incorporating product thinking and UX workflow with the development process, I see products from problem discovery to launch and onward.',
             title: 'product',
         },
         {
             description:
-                'BUSINESS I work closely with users to understand their needs, pain points, and wants in order to generate usable products that solve real problems.',
+                'I work to build sustainable experiences that net more long-term engaged users rather than short term metric movers.',
             title: 'business',
         },
     ];
@@ -140,7 +140,7 @@ export default function Home() {
                                     <SwiperSlide key={key}>
                                         <div className='case-study-card w-[170px] rounded bg-white p-6 drop-shadow lg:w-[350px]'>
                                             <p className='pb-8 lg:pb-10'>
-                                                <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-3xl'>
+                                                <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-2xl'>
                                                     {caseStudies[key].title}
                                                 </a>
                                             </p>
