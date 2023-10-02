@@ -24,7 +24,10 @@ export default function TextBlockOne(props) {
                 )}
 
                 {aboveContent && aboveContent !== '' ? (
-                    <p className='mb-3 text-base'>{aboveContent}</p>
+                    <p
+                        className='mb-3 text-base'
+                        dangerouslySetInnerHTML={{ __html: aboveContent }}
+                    ></p>
                 ) : (
                     ''
                 )}
@@ -106,7 +109,10 @@ export default function TextBlockOne(props) {
                 </div>
 
                 {belowContent && belowContent !== '' ? (
-                    <p className='pt-1 text-base'>{belowContent}</p>
+                    <p
+                        className='pt-1 text-base'
+                        dangerouslySetInnerHTML={{ __html: belowContent }}
+                    ></p>
                 ) : (
                     ''
                 )}
