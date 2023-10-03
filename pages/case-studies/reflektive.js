@@ -138,27 +138,6 @@ export default function Reflektive() {
                 ]}
             />
 
-
-            <div className='pt-8'></div>
-            <TextBlockOne
-                kicker=''
-                title='Leadership acquired an app to start from'
-                aboveContent='After acquiring &lsquo;ZP Challenges&lsquo;, Thrive sought to integrate it into the Thrive app. With an 82% drop-off rate from challenge opt-in to completion, a substantial upgrade was imperative.'
-                belowContent=''
-                images={[
-                    {
-                        desktop: '/images/cs/thrive-challenge-2.png',
-                        mobile: '/images/cs/thrive-challenge-2.png',
-                        alt: 'Thrive app screens',
-                        desktopWidth: 1040,
-                        desktopHeight: 230,
-                        mobileWidth: 382,
-                        mobileHeight: 230,
-                        caption: '',
-                    },
-                ]}
-            />
-
             <div className='pt-8'></div>
             <ProblemCard
                 backgroundColor='#FCD9E0'
