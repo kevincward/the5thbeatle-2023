@@ -140,9 +140,9 @@ export default function Reflektive() {
 
             <div className='pt-8'></div>
             <ProblemCard
-                backgroundColor='#FCD9E0'
-                textColor='#782133'
-                content='How might we craft an engaging challenge experience that propels users to achieve their goals?'
+                backgroundColor='#FDEBD2'
+                textColor='#7C4D0F'
+                content='How might we enhance the product to simplify feedback creation and reference later?'
             />
 
             <div className='scroll-mt-[152px] pb-20' id='section-3'></div>
