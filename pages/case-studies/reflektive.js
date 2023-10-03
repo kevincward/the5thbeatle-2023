@@ -126,8 +126,8 @@ export default function Reflektive() {
                 <p>&#8226; Improve adoption of company hashtag usage in feedback experiences</p>'
                 images={[
                     {
-                        desktop: '/images/cs/reflektive-challenge-1.png',
-                        mobile: '/images/cs/reflektive-challenge-1.png',
+                        desktop: '/images/cs/reflektive-challenge-2.svg',
+                        mobile: '/images/cs/reflektive-challenge-2.svg',
                         alt: 'Zoom interview with customer',
                         desktopWidth: 1040,
                         desktopHeight: 200,
@@ -138,20 +138,6 @@ export default function Reflektive() {
                 ]}
             />
 
-            <div className='pt-8'></div>
-            <TextBlockOne
-                kicker=''
-                title='Challenge users to pursue their goals'
-                aboveContent='The app product team hosted a workshop with members from our executive team, behavior change specialists, and other product teams to brainstorm opportunities/features to motivate users. We decided to introduce challenges into the app.
-                
-                With challenges, we could:
-                1. Break up goals into manageable steps
-                2. Ensure user commitment through required actions
-                3. Demonstrate progressive achievement & celebrating small wins
-                4. Provide a communal environment, cultivating a strong sense of unity for heightened motivation and support'
-                belowContent=''
-                images={[]}
-            />
 
             <div className='pt-8'></div>
             <TextBlockOne
