@@ -37,32 +37,54 @@ export default function Reflektive() {
 
             <div className='scroll-mt-[152px] pb-8' id='section-1'></div>
             <ContextCard
-                titleColor='#782133'
-                textColor='#060125'
-                backgroundColor='#FCD9E0'
+                titleColor='#085735'
+                textColor='#085735'
+                backgroundColor='#A9E2C9'
                 content={{
-                    kicker: 'ABOUT THRIVE',
+                    kicker: 'ABOUT REFLEKTIVE',
                     description:
-                        'Thrive Global is a B2B2C company helping individuals, corporations and communities improve their well-being and performance through their goal oriented habit building platform.',
+                        'Reflektive is an HR tech company that built an employee performance tracking platform for HRBPs, Managers, and coworkers- a single place to collect and provide feedback, run 1:1s, and facilitate reviews. Reflektive prioritizes peer to peer feedback to drive performance monitoring, keep users engaged, and better connect coworkers.',
                     title: 'Senior Product Designer',
                     titleDescription:
-                        'Product strategy, Information architecture, Visual design & Interaction, prototyping & testing',
-                    teammates: 'Product manager, Behavior change product manager, and Content strategist',
-                    timeline: 'Apr 2021 - Jun 2021',
+                        'Product thinking, Information architecture, Visual design & Interaction, prototyping & testing',
+                    teammates: 'Product manager, Product marketing manager',
+                    timeline: 'Nov 2020 - Jan 2021',
                 }}
             />
 
             <div className='pt-8'></div>
             <TextBlockOne
                 kicker='OVERVIEW'
-                title='App based daily itinerary'
-                aboveContent='Thrive app users choose a health intention like lose weight, get better sleep or reduce stress and the app serves up “microsteps” (habit suggestions) and content to help them achieve their goals.'
+                title='How feedback works in Reflektive'
+                aboveContent='Employees, teams, and managers are empowered to request and provide feedback that they can reference for their 1:1’s and review cycle to drive a culture of continuous assessment and improvement.
+                            <br />
+                            There are 2 core experiences in the feedback product:'
                 belowContent=''
                 images={[
                     {
-                        desktop: '/images/cs/thrive-overview-1.png',
-                        mobile: '/images/cs/thrive-overview-1.png',
-                        alt: 'Thrive app screens',
+                        desktop: '/images/cs/reflektive-overview-1.svg',
+                        mobile: '/images/cs/reflektive-overview-1.svg',
+                        alt: 'Parts of Reflektive feedback product',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: '',
+                    },
+                ]}
+            />
+
+            <div className='pt-8'></div>
+            <TextBlockOne
+                kicker=''
+                title='Employee performance management relies on feedback'
+                aboveContent='Feedback is the connective tissue that unifies Reflektive products by capturing moments of impact throughout the year and channeling the written record of that impact in key contexts.'
+                belowContent=''
+                images={[
+                    {
+                        desktop: '/images/cs/reflektive-overview-2.svg',
+                        mobile: '/images/cs/reflektive-overview-2.svg',
+                        alt: 'Parts of Reflektive feedback product',
                         desktopWidth: 1040,
                         desktopHeight: 230,
                         mobileWidth: 382,
@@ -75,14 +97,38 @@ export default function Reflektive() {
             <div className='scroll-mt-[152px] pb-20' id='section-2'></div>
             <TextBlockOne
                 kicker='CHALLENGE'
-                title='Users were losing interest in goals and abandoning the app'
-                aboveContent='Within weeks of onboarding, data showed a significant portion of users stopped using the app. Insights from interviewing churned users found the most common reasons:'
+                title='Years of ad hoc additions had left the product struggling with declining user engagement'
+                aboveContent='Feature-focused design and technical debt complicated core feedback experiences, resulting in low usage, high drop-offs, and a declining NPS score.'
                 belowContent=''
                 images={[
                     {
-                        desktop: '/images/cs/thrive-challenge-1.svg',
-                        mobile: '/images/cs/thrive-challenge-1.svg',
-                        alt: 'Chart showing reasons for Thrive app dropoff',
+                        desktop: '/images/cs/reflektive-challenge-1.png',
+                        mobile: '/images/cs/reflektive-challenge-1.png',
+                        alt: 'Zoom interview with customer',
+                        desktopWidth: 1040,
+                        desktopHeight: 200,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: '',
+                    },
+                ]}
+            />
+
+            <TextBlockOne
+                kicker=''
+                title=''
+                aboveContent='Analyzing quarterly user research feedback, we identified the key issues:'
+                belowContent='<b>The business had additional requests to handle:</b>
+                <br />
+                <p>&#8226; Account for all legacy workflows</p>
+                <p>&#8226; Address known feature gaps (i.e. inability to add an image to feedback)</p>
+                <p>&#8226; Make feedback more seamlessly integrate into other modules</p>
+                <p>&#8226; Improve adoption of company hashtag usage in feedback experiences</p>'
+                images={[
+                    {
+                        desktop: '/images/cs/reflektive-challenge-1.png',
+                        mobile: '/images/cs/reflektive-challenge-1.png',
+                        alt: 'Zoom interview with customer',
                         desktopWidth: 1040,
                         desktopHeight: 200,
                         mobileWidth: 382,
