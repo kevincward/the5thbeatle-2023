@@ -16,16 +16,25 @@ export default function Home() {
             title: 'Building design into a key business asset',
             company: 'Trifecta',
             url: '/case-studies/trifecta',
+            image: '/images/hero-background.svg',
         },
         {
             title: 'Fostering camaraderie for app retention',
             company: 'Thrive Global',
             url: '/case-studies/thrive',
+            image: '/images/medium-bubble.svg',
         },
         {
             title: 'Refreshing a product to encourage self-growth',
             company: 'Reflektive',
             url: '/case-studies/reflektive',
+            image: '/images/hero-background.svg',
+        },
+        {
+            title: 'Test Case Study',
+            company: 'Reflektive',
+            url: '/case-studies/reflektive',
+            image: '/images/hero-background.svg',
         },
     ];
 
@@ -76,6 +85,9 @@ export default function Home() {
     ];
 
     const [activeSkill, setActiveSkill] = useState(0);
+    const [activeCaseStudyImage, setActiveCaseStudyImage] = useState(
+        '/images/hero-background.svg',
+    );
 
     return (
         <main className='pt-20'>
@@ -103,7 +115,7 @@ export default function Home() {
                 </div>
                 <div className='absolute right-0 top-0 hidden lg:block'>
                     <Image
-                        src='/images/hero-background.svg'
+                        src={activeCaseStudyImage}
                         width={522}
                         height={416}
                         alt='hero background'
@@ -128,13 +140,24 @@ export default function Home() {
                                 navigation={{ nextEl: '.next-button' }}
                                 slidesPerView='auto'
                                 spaceBetween={20}
-                                loop={true}
                                 modules={[Navigation]}
                                 className='case-studies-swiper'
                             >
                                 {Object.keys(caseStudies).map((key) => (
                                     <SwiperSlide key={key}>
-                                        <div className='case-study-card w-[170px] rounded bg-white p-6 drop-shadow lg:w-[350px]'>
+                                        <div
+                                            className='case-study-card w-[170px] rounded bg-white p-6 drop-shadow lg:w-[350px]'
+                                            onClick={() => {
+                                                setActiveCaseStudyImage(
+                                                    caseStudies[key].image,
+                                                );
+                                            }}
+                                            onMouseEnter={() => {
+                                                setActiveCaseStudyImage(
+                                                    caseStudies[key].image,
+                                                );
+                                            }}
+                                        >
                                             <p className='pb-8 lg:pb-10'>
                                                 <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-2xl'>
                                                     {caseStudies[key].title}
