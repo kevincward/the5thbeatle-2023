@@ -4,18 +4,20 @@ import SecondaryNav from '@/components/secondaryNav';
 import ContextCard from '@/components/contextCard';
 import TextBlockOne from '@/components/textBlockOne';
 import ProblemCard from '@/components/problemCard';
+import Results from '@/components/results';
+import MoreStudies from '@/components/moreStudies';
 
 export default function Reflektive() {
     const caseStudies = [
         {
             title: 'Building design into a key business asset',
             company: 'Trifecta',
-            url: '#',
+            url: '/case-studies/trifecta',
         },
         {
             title: 'Fostering camaraderie for app retention',
             company: 'Thrive Global',
-            url: '#',
+            url: '/case-studies/thrive',
         },
     ];
 
@@ -26,7 +28,7 @@ export default function Reflektive() {
                 title='Refreshing a product to encourage self-growth'
             />
 
-            <ParallaxBlock image='/images/parallax-background.jpg' />
+            <ParallaxBlock image='/images/cs/reflektive-bkgd-1.png' />
 
             <SecondaryNav
                 sectionOneTitle='Overview'
@@ -38,7 +40,7 @@ export default function Reflektive() {
             <div className='scroll-mt-[152px] pb-8' id='section-1'></div>
             <ContextCard
                 titleColor='#085735'
-                textColor='#085735'
+                textColor='#060125'
                 backgroundColor='#A9E2C9'
                 content={{
                     kicker: 'ABOUT REFLEKTIVE',
@@ -118,12 +120,7 @@ export default function Reflektive() {
                 kicker=''
                 title=''
                 aboveContent='Analyzing quarterly user research feedback, we identified the key issues:'
-                belowContent='<b>The business had additional requests to handle:</b>
-                <br />
-                <p>&#8226; Account for all legacy workflows</p>
-                <p>&#8226; Address known feature gaps (i.e. inability to add an image to feedback)</p>
-                <p>&#8226; Make feedback more seamlessly integrate into other modules</p>
-                <p>&#8226; Improve adoption of company hashtag usage in feedback experiences</p>'
+                belowContent=''
                 images={[
                     {
                         desktop: '/images/cs/reflektive-challenge-2.svg',
@@ -138,7 +135,6 @@ export default function Reflektive() {
                 ]}
             />
 
-            <div className='pt-8'></div>
             <ProblemCard
                 backgroundColor='#FDEBD2'
                 textColor='#7C4D0F'
@@ -148,14 +144,14 @@ export default function Reflektive() {
             <div className='scroll-mt-[152px] pb-20' id='section-3'></div>
             <TextBlockOne
                 kicker='APPROACH'
-                title='Insert wrench: we couldn’t talk to the users we were building for...'
-                aboveContent='Leadership tasked us with creating the MVP of the challenges feature for a key client, yet we faced the challenge of limited access to their employees for gathering insights and testing concepts. To compensate, we decided to:'
+                title='Begin with user-centric goals to direct our improvements'
+                aboveContent='Setting goals for each core experience provided us with a clear guiding light as we assessed issues, opportunities, jobs to be done, and desired outcomes.'
                 belowContent=''
                 images={[
                     {
-                        desktop: '/images/cs/thrive-approach-1.svg',
-                        mobile: '/images/cs/thrive-approach-1.svg',
-                        alt: 'Chart showing approach to tackle problem',
+                        desktop: '/images/cs/reflektive-approach-1.svg',
+                        mobile: '/images/cs/reflektive-approach-1.svg',
+                        alt: 'Core experience goals chart',
                         desktopWidth: 1040,
                         desktopHeight: 230,
                         mobileWidth: 382,
@@ -168,54 +164,275 @@ export default function Reflektive() {
             <div className='pt-8'></div>
             <TextBlockOne
                 kicker=''
-                title='Evaluating ZP Challenges flow'
-                aboveContent='ZP Challenge app users join a single challenge for a chance to win a cash prize. The premise of the challenge was pretty simple: tap the button for the category of the better choice they made for 21 days.
-
-                With habit formation as the cornerstone of Thrive&lsquo;s products, we analyzed the ZP flow through James Clear&lsquo;s Habit Loop lens. A heuristic evaluation revealed a lot of opportunities to insert more cues, motivational moments, responses, and rewards.'
-                belowContent=''
+                title='Fixing the entry point discoverability issues  and improving the seamless integration'
+                aboveContent='Simplifying the feedback initiation form to a singular, universal call to action and one form pattern would not only make the user experience more intuitive but also significantly lighten the cognitive load. This approach not only enhances user engagement but also minimizes the technical burden by reducing the number of components that need support.'
+                belowContent='I opted for a modal component to host the feedback form, a versatile UI that seamlessly adapts to any interface without disrupting the layout.'
                 images={[
                     {
-                        desktop: '/images/cs/thrive-approach-2.png',
-                        mobile: '/images/cs/thrive-approach-2.png',
-                        alt: 'ZP flow and James Clear‘s Habit Loop',
+                        desktop: '/images/cs/reflektive-approach-2.svg',
+                        mobile: '/images/cs/reflektive-approach-2.svg',
+                        alt: 'Audit of CTA buttons',
                         desktopWidth: 1040,
                         desktopHeight: 230,
                         mobileWidth: 382,
                         mobileHeight: 230,
-                        caption: 'Reviewing ZP flow from a habit loop standpoint',
+                        caption: 'Reducing multiple, inconsistent buttons to a single feedback initiator',
                     },
                 ]}
             />
 
-            <ParallaxBlock image='/images/parallax-background.jpg' />
-
-            <div className='scroll-mt-[152px] pb-20' id='section-4'></div>
+            <div className='pt-8'></div>
             <TextBlockOne
-                kicker='FEATURED WORK'
-                title='Key projects'
-                aboveContent='Checkout Redesign & Meal Choice'
+                kicker=''
+                title='Improving workflow selection comprehension and general form cleanup'
+                aboveContent='Substituting obscure workflow descriptions with user-focused selections guarantees users achieve their desired outcomes more effectively.'
                 belowContent=''
-                images={[]}
+                images={[
+                    {
+                        desktop: '/images/cs/reflektive-approach-3.png',
+                        mobile: '/images/cs/reflektive-approach-3.png',
+                        alt: 'Old vs new feedback selection',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: 'More explicit calls to action based on user goals ensures easier selection',
+                    },
+                ]}
             />
 
+            <div className='pt-8'></div>
+            <TextBlockOne
+                kicker=''
+                title='Simplifying feedback forms and fixing feedback visibility comprehension'
+                aboveContent='Analyzing form input data, we identified the essential fields for streamlining. I employed strategic tip placements, clear visibility cues, and instructional placeholder text to enhance user clarity and ease.'
+                belowContent=''
+                images={[
+                    {
+                        desktop: '/images/cs/reflektive-approach-4.svg',
+                        mobile: '/images/cs/reflektive-approach-4.svg',
+                        alt: 'Simplified feedback form',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: '',
+                    },
+                ]}
+            />
+
+            <div className='pt-8'></div>
+            <TextBlockOne
+                kicker=''
+                title='Defining a unified feedback object format'
+                aboveContent='I employed a card pattern, reminiscent of familiar social media posts, for a more user-friendly and adaptable feedback object format.
+                <br />
+                <br />
+                Each feedback object contains 4 parts: the feedback recipient, the feedback content, additional details for recipient, and actions on the feedback (like, comment). Analyzing form input data, we identified the essential fields for streamlining. I employed strategic tip placements, clear visibility cues, and instructional placeholder text to enhance user clarity and ease.'
+                belowContent=''
+                images={[
+                    {
+                        desktop: '/images/cs/reflektive-approach-5.svg',
+                        mobile: '/images/cs/reflektive-approach-5.svg',
+                        alt: '3 feedback layouts',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: 'Unified feedback layout',
+                    },
+                ]}
+            />
+
+
+            <TextBlockOne
+                images={[
+                    {
+                        desktop: '/images/cs/reflektive-approach-6.png',
+                        mobile: '/images/cs/reflektive-approach-6.png',
+                        alt: 'Old vs new feedback articles',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: 'Different feedback types but consistent layouts for enhanced readability',
+                    },
+                ]}
+            />
+
+            <div className='pt-8'></div>
+            <TextBlockOne
+                kicker=''
+                title='Filters: the search alternative'
+                aboveContent='Users previously struggled to locate specific feedback for their reviews, relying solely on scrolling their profiles. Initially we wanted to introduce a keyword searching feature, however we didn&lsquo;t have the technical resources. To empower users, we introduced key dropdowns for recipient, feedback type, and hashtags, alongside time and provider filters, enabling effortless feedback discovery.'
+                belowContent=''
+                images={[
+                    {
+                        desktop: '/images/cs/reflektive-approach-7.svg',
+                        mobile: '/images/cs/reflektive-approach-7.svg',
+                        alt: 'New feedback filtering',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: 'Sticky filters for effortless feedback retrieval',
+                    },
+                ]}
+            />
+
+            <div className='pt-8'></div>
+            <TextBlockOne
+                kicker=''
+                title='Testing the new patterns with customers'
+                aboveContent='From the pattern wireframes, I created a high fidelity prototype and moderation guide to see how customers interpreted the changes to the feedback tool.'
+                belowContent=''
+                images={[
+                    {
+                        desktop: '/images/cs/reflektive-approach-8.png',
+                        mobile: '/images/cs/reflektive-approach-8.png',
+                        alt: 'Zoom usability tests with customers',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: '',
+                    },
+                ]}
+            />
+
+            <div className='pt-8'></div>
             <TextBlockOne
                 kicker=''
                 title=''
-                aboveContent='Trifecta&lsquo;s existing checkout flow suffered from significant drop-offs due to its clunky, confusing nature and lack of crucial details. Leveraging the new Trifecta design system, checkout UX conventions, and incorporating customer feedback, I lead a comprehensive redesign of the checkout experience. This transformation resulted in an 24% increase in checkout page conversions, coupled with an 18% reduction in flow time. The redesigned checkout not only paved the way for introducing meal selection but also facilitated the initiation of A/B testing.'
+                aboveContent='After distilling the insights from these sessions, we further enhanced the product by:
+                <br />
+                &#8226; Switching to more unique icons for feedback type posts
+                <br />
+                &#8226; Introducing timestamps to saved and revisited feedback submissions
+                <br />
+                &#8226; Adding content tips to improve feedback submission (i.e. “helpful feedback is actionable. Make sure the recipients know how to move forward.”'
+                belowContent=''
+                images={[]}
+            />
+            <div className='pt-16'></div>
+
+            <ParallaxBlock image='/images/cs/reflektive-bkgd-2.png' />
+
+            <div className='scroll-mt-[152px] pb-20' id='section-4'></div>
+            <TextBlockOne
+                kicker='OUTCOME'
+                title='Final designs'
+                aboveContent='The new feedback system was rolled out to a group of beta customers for further stress testing and to start to collect data around engagement. It was also used as a selling feature for customer subscription renewals.'
                 belowContent=''
                 images={[
                     {
-                        desktop: '/images/cs/trifecta-featured-work-1.png',
-                        mobile: '/images/cs/trifecta-featured-work-1.png',
-                        alt: 'Old vs new Trifecta product page',
+                        desktop: '/images/cs/reflektive-outcome-1.png',
+                        mobile: '/images/cs/reflektive-outcome-1.png',
+                        alt: 'Zoom usability tests with customers',
                         desktopWidth: 1040,
                         desktopHeight: 230,
                         mobileWidth: 382,
                         mobileHeight: 230,
-                        caption: 'Product page redesign',
+                        caption: '',
                     },
                 ]}
             />
+
+            <div className='pt-8'></div>
+            <TextBlockOne
+                images={[
+                    {
+                        desktop: '/images/cs/reflektive-outcome-2.svg',
+                        mobile: '/images/cs/reflektive-outcome-2.svg',
+                        alt: 'Feedback examples',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: '',
+                    },
+                    {
+                        desktop: '/images/cs/reflektive-outcome-3.svg',
+                        mobile: '/images/cs/reflektive-outcome-3.svg',
+                        alt: 'Illustration in empty feedback feedback',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: 'Feedback feed empty state',
+                    },
+                ]}
+            />
+
+            <div className='pt-8'></div>
+            <TextBlockOne
+                images={[
+                    {
+                        desktop: '/images/cs/reflektive-outcome-4.png',
+                        mobile: '/images/cs/reflektive-outcome-4.png',
+                        alt: 'Feedback feed on desktop',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: '',
+                    },
+                ]}
+            />
+
+            <div className='pt-8'></div>
+            <Results
+                kicker=''
+                title='Results'
+                values={[
+                    {
+                        start: 0,
+                        end: 27,
+                        suffix: '%',
+                        prefix: '',
+                        title: 'Increase in feedback object creation',
+                    },
+                    {
+                        start: 0,
+                        end: 89,
+                        suffix: 'secs',
+                        prefix: '',
+                        title: 'Average time reduction in feedback flow',
+                    },
+                    {
+                        start: 0,
+                        end: 34,
+                        suffix: '%',
+                        prefix: '',
+                        title: 'Increase in feedback initiations',
+                    },
+                ]}
+                text=''
+            />
+
+            <div className='pt-16'></div>
+            <TextBlockOne
+                kicker=''
+                title=''
+                aboveContent=''
+                belowContent='Two months after this feature was launched, Reflektive was acquired by PeopleFluent. Our feedback system served as a blueprint for multiple complementary products.'
+                images={[
+                    {
+                        desktop: '/images/cs/reflektive-outcome-5.svg',
+                        mobile: '/images/cs/reflektive-outcome-5.svg',
+                        alt: 'Reflektive & PeopleFluent logos',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: '',
+                    },
+                ]}
+            />
+
+            <div className='pt-8'></div>
+            <MoreStudies title='More Case Studies' caseStudies={caseStudies} />
+
         </>
     );
 }

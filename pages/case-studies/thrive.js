@@ -4,18 +4,20 @@ import SecondaryNav from '@/components/secondaryNav';
 import ContextCard from '@/components/contextCard';
 import TextBlockOne from '@/components/textBlockOne';
 import ProblemCard from '@/components/problemCard';
+import Results from '@/components/results';
+import MoreStudies from '@/components/moreStudies';
 
 export default function Thrive() {
     const caseStudies = [
         {
             title: 'Refreshing a product to encourage self-growth',
             company: 'Reflektive',
-            url: '#',
+            url: '/case-studies/reflektive',
         },
         {
             title: 'Building design into a key business asset',
             company: 'Trifecta',
-            url: '#',
+            url: '/case-studies/trifecta',
         },
     ];
 
@@ -26,7 +28,7 @@ export default function Thrive() {
                 title='Fostering camaraderie for stronger app retention'
             />
 
-            <ParallaxBlock image='/images/parallax-background.jpg' />
+            <ParallaxBlock image='/images/cs/thrive-bkgd-1.png' />
 
             <SecondaryNav
                 sectionOneTitle='Overview'
@@ -97,11 +99,15 @@ export default function Thrive() {
                 kicker=''
                 title='Challenge users to pursue their goals'
                 aboveContent='The app product team hosted a workshop with members from our executive team, behavior change specialists, and other product teams to brainstorm opportunities/features to motivate users. We decided to introduce challenges into the app.
-                
                 With challenges, we could:
+                <br />
+                <br />
                 1. Break up goals into manageable steps
+                <br />
                 2. Ensure user commitment through required actions
+                <br />
                 3. Demonstrate progressive achievement & celebrating small wins
+                <br />
                 4. Provide a communal environment, cultivating a strong sense of unity for heightened motivation and support'
                 belowContent=''
                 images={[]}
@@ -127,7 +133,6 @@ export default function Thrive() {
                 ]}
             />
 
-            <div className='pt-8'></div>
             <ProblemCard
                 backgroundColor='#FCD9E0'
                 textColor='#782133'
@@ -261,56 +266,224 @@ export default function Thrive() {
                 kicker=''
                 title='Deciding on an MVP'
                 aboveContent='I collaborated closely with key stakeholders to craft an MVP aligned with user needs, business objectives, and technical feasibility, using feature mapping and prioritization.'
-                belowContent='MVP Key Features
-                Users participate individually in challenges
-                Users can select from goal based challenges
-                User checks into one of several suggested Microsteps, can do as many as they want
-                Progress indicator
-                Badge based rewards
-                Social activity feed/high five feedback
-                Sentiment rating of challenge
-                <p><br></p>
-                Success metrics
-                <p><b>Primary</b></p>
-                <p>App retention</p>
-                <p><br></p>
-                <p><b>Secondary</b></p>
-                <p>&#8226; Number of users who opt into a challenge</p>
-                <p>&#8226; Number of users who check into a Microstep or record a unit in a challenge</p>
-                <p>&#8226; Number of Microsteps a user checks into over the course of a challenge</p>
-                <p>&#8226; Number of users who complete a challenge</p>'
+                belowContent='<h2 style="font-family:recoleta;font-size:21px">MVP Key Features</h2>
+                &#8226; Users participate individually in challenges
+                <br />
+                &#8226; Users can select from goal based challenges
+                <br />
+                &#8226; User checks into one of several suggested Microsteps, can do as many as they want
+                <br />
+                &#8226; Progress indicator
+                <br />
+                &#8226; Badge based rewards
+                <br />
+                &#8226; Social activity feed/high five feedback
+                <br />
+                &#8226; Sentiment rating of challenge
+                <br />
+                <br />
+                <h2 style="font-family:recoleta;font-size:21px">Success Metrics</h2>
+                <b>Primary</b>
+                <br />
+                App retention
+                <br />
+                <br />
+                <b>Secondary</b>
+                <br />
+                &#8226; Number of users who opt into a challenge
+                <br />
+                &#8226; Number of users who check into a Microstep or record a unit in a challenge
+                <br />
+                &#8226; Number of Microsteps a user checks into over the course of a challenge
+                <br />
+                &#8226; Number of users who complete a challenge'
                 images={[]}
             />
 
-            <ParallaxBlock image='/images/parallax-background.jpg' />
-
-            <div className='scroll-mt-[152px] pb-20' id='section-4'></div>
-            <TextBlockOne
-                kicker='FEATURED WORK'
-                title='Key projects'
-                aboveContent='Checkout Redesign & Meal Choice'
-                belowContent=''
-                images={[]}
-            />
-
+            <div className='pt-8'></div>
             <TextBlockOne
                 kicker=''
-                title=''
-                aboveContent='Trifecta&lsquo;s existing checkout flow suffered from significant drop-offs due to its clunky, confusing nature and lack of crucial details. Leveraging the new Trifecta design system, checkout UX conventions, and incorporating customer feedback, I lead a comprehensive redesign of the checkout experience. This transformation resulted in an 24% increase in checkout page conversions, coupled with an 18% reduction in flow time. The redesigned checkout not only paved the way for introducing meal selection but also facilitated the initiation of A/B testing.'
+                title='Wireframes'
+                aboveContent=''
                 belowContent=''
                 images={[
                     {
-                        desktop: '/images/cs/trifecta-featured-work-1.png',
-                        mobile: '/images/cs/trifecta-featured-work-1.png',
-                        alt: 'Old vs new Trifecta product page',
+                        desktop: '/images/cs/thrive-approach-7.png',
+                        mobile: '/images/cs/thrive-approach-7.png',
+                        alt: 'Screens from first time entering challenge experience',
                         desktopWidth: 1040,
                         desktopHeight: 230,
                         mobileWidth: 382,
                         mobileHeight: 230,
-                        caption: 'Product page redesign',
+                        caption: 'First time experience',
                     },
                 ]}
             />
+
+            <div className='pt-8'></div>
+            <TextBlockOne
+                images={[
+                    {
+                        desktop: '/images/cs/thrive-approach-8.png',
+                        mobile: '/images/cs/thrive-approach-8.png',
+                        alt: 'Browsing screens',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: 'Challenge browsing',
+                    },
+                ]}
+            />
+
+            <div className='pt-8'></div>
+            <TextBlockOne
+                images={[
+                    {
+                        desktop: '/images/cs/thrive-approach-9.png',
+                        mobile: '/images/cs/thrive-approach-9.png',
+                        alt: 'Challenge screens',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: 'In challenge flow',
+                    },
+                ]}
+            />
+
+            <div className='pt-8'></div>
+            <TextBlockOne
+                images={[
+                    {
+                        desktop: '/images/cs/thrive-approach-10.png',
+                        mobile: '/images/cs/thrive-approach-10.png',
+                        alt: 'Challenge completion screens',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: 'Challenge completion & reflection',
+                    },
+                ]}
+            />
+            <div className='pt-16'></div>
+
+            <ParallaxBlock image='/images/cs/thrive-bkgd-2.png' />
+
+            <div className='scroll-mt-[152px] pb-20' id='section-4'></div>
+            <TextBlockOne
+                kicker='OUTCOME'
+                title='Final designs'
+                aboveContent='We shared wireframe prototypes with the key clientlsquo;s representative to gather feedback and refine the design. Once we achieved alignment on the MVP experience, we proceeded to build and launch it to their employee base.'
+                belowContent=''
+                images={[
+                    {
+                        desktop: '/images/cs/thrive-outcome-1.png',
+                        mobile: '/images/cs/thrive-outcome-1.png',
+                        alt: 'Screens from challenge experience',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: '',
+                    },
+                ]}
+            />
+
+            <div className='pt-8'></div>
+            <TextBlockOne
+                images={[
+                    {
+                        desktop: '/images/cs/thrive-outcome-4.png',
+                        mobile: '/images/cs/thrive-outcome-4.png',
+                        alt: 'User navigating challenges',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: 'Celebrating other challengers',
+                    },
+                    {
+                        desktop: '/images/cs/thrive-outcome-2.png',
+                        mobile: '/images/cs/thrive-outcome-2.png',
+                        alt: 'Goal tracking Trifecta app screens',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: 'Home screen challenges widget',
+                    },
+                ]}
+            />
+
+            <div className='pt-8'></div>
+            <TextBlockOne
+                images={[
+                    {
+                        desktop: '/images/cs/thrive-outcome-5.png',
+                        mobile: '/images/cs/thrive-outcome-5.png',
+                        alt: 'Challenge home screen & review screen',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: '',
+                    },
+                    {
+                        desktop: '/images/cs/thrive-outcome-3.png',
+                        mobile: '/images/cs/thrive-outcome-3.png',
+                        alt: 'Coaching from Thrive on challenge',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: '',
+                    },
+                ]}
+            />
+
+            <div className='pb-8'></div>
+            <TextBlockOne
+                images={[
+                    {
+                        desktop: '/images/cs/thrive-outcome-6.png',
+                        mobile: '/images/cs/thrive-outcome-6.png',
+                        alt: 'Woman browsing challenges on walk',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: '',
+                    },
+                ]}
+            />
+
+            <div className='pt-8'></div>
+            <Results
+                kicker=''
+                title='Results'
+                values={[
+                    {
+                        start: 0,
+                        end: 4.13,
+                        suffix: '%',
+                        prefix: '',
+                        title: 'Average Day 30 retention rate increase',
+                    },
+                    {
+                        start: 0,
+                        end: 73,
+                        suffix: '%',
+                        prefix: '',
+                        title: 'Users who completed a challenge',
+                    },
+                ]}
+                text=''
+            />
+
+            <div className='pt-8'></div>
+            <MoreStudies title='More Case Studies' caseStudies={caseStudies} />
         </>
     );
 }

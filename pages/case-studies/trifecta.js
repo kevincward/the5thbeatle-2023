@@ -197,6 +197,7 @@ export default function Trifecta() {
                 images={[]}
             />
 
+            <div className='pb-8'></div>
             <TextBlockOne
                 kicker=''
                 title=''
@@ -216,6 +217,7 @@ export default function Trifecta() {
                 ]}
             />
 
+            <div className='pb-8'></div>
             <TextBlockOne
                 images={[
                     {
@@ -231,6 +233,7 @@ export default function Trifecta() {
                 ]}
             />
 
+            <div className='pb-8'></div>
             <TextBlockOne
                 images={[
                     {
@@ -256,6 +259,7 @@ export default function Trifecta() {
                 ]}
             />
 
+            <div className='pb-8'></div>
             <TextBlockOne
                 images={[
                     {
@@ -271,27 +275,7 @@ export default function Trifecta() {
                 ]}
             />
 
-            <div className='pt-8'></div>
-            <TextBlockOne
-                kicker='OVERVIEW'
-                title='How feedback works in Reflektive'
-                aboveContent='Employees, teams, and managers are empowered to request and provide feedback that they can reference for their 1:1’s and review cycle to drive a culture of continuous assessment and improvement.
-                            <br />
-                            There are 2 core experiences in the feedback product:'
-                belowContent=''
-                images={[
-                    {
-                        desktop: '/images/cs/reflektive-overview-1.svg',
-                        mobile: '/images/cs/reflektive-overview-1.svg',
-                        alt: 'Parts of Reflektive feedback product',
-                        desktopWidth: 1040,
-                        desktopHeight: 230,
-                        mobileWidth: 382,
-                        mobileHeight: 230,
-                        caption: '',
-                    },
-                ]}
-            />
+            <div className='pb-8'></div>
             <TextBlockOne
                 kicker=''
                 title=''
@@ -319,6 +303,7 @@ export default function Trifecta() {
                 ]}
             />
 
+            <div className='pb-8'></div>
             <TextBlockOne
                 images={[
                     {
@@ -344,6 +329,7 @@ export default function Trifecta() {
                 ]}
             />
 
+            <div className='pb-8'></div>
             <TextBlockOne
                 images={[
                     {
@@ -369,27 +355,7 @@ export default function Trifecta() {
                 ]}
             />
 
-            <div className='pt-8'></div>
-            <TextBlockOne
-                kicker='OVERVIEW'
-                title='How feedback works in Reflektive'
-                aboveContent='Employees, teams, and managers are empowered to request and provide feedback that they can reference for their 1:1’s and review cycle to drive a culture of continuous assessment and improvement.
-                            <br />
-                            There are 2 core experiences in the feedback product:'
-                belowContent=''
-                images={[
-                    {
-                        desktop: '/images/cs/reflektive-overview-1.svg',
-                        mobile: '/images/cs/reflektive-overview-1.svg',
-                        alt: 'Parts of Reflektive feedback product',
-                        desktopWidth: 1040,
-                        desktopHeight: 230,
-                        mobileWidth: 382,
-                        mobileHeight: 230,
-                        caption: '',
-                    },
-                ]}
-            />
+            <div className='pb-8'></div>
             <TextBlockOne
                 kicker=''
                 title=''
@@ -398,6 +364,7 @@ export default function Trifecta() {
                 images={[]}
             />
 
+            <div className='pb-8'></div>
             <TextBlockOne
                 kicker=''
                 title=''
@@ -417,6 +384,7 @@ export default function Trifecta() {
                 ]}
             />
 
+            <div className='pb-8'></div>
             <TextBlockOne
                 images={[
                     {
@@ -432,6 +400,7 @@ export default function Trifecta() {
                 ]}
             />
 
+            <div className='pb-8'></div>
             <TextBlockOne
                 images={[
                     {
