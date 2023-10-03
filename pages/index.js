@@ -89,7 +89,7 @@ export default function Home() {
                             While my band is on hiatus, I&apos;m focused on
                             designing meaningful products.
                         </p>
-                        <p className='text-xl' id="anchor-cs">
+                        <p className='text-xl' id='anchor-cs'>
                             Principal Product Designer at{' '}
                             <a
                                 className='font-recoleta text-purple'
@@ -179,7 +179,7 @@ export default function Home() {
                 </h2>
                 <div className='mx-auto grid max-w-[42rem] grid-cols-4 gap-4 gap-x-0 lg:grid-cols-8'>
                     <div className='w-100 text-center'>
-                        <div className='hover:animate-pulse ease-in-out'>
+                        <div className='ease-in-out hover:animate-pulse'>
                             <Image
                                 src='/images/trifecta-app-icon.svg'
                                 alt='Trifecta'
@@ -190,7 +190,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='w-100 text-center'>
-                        <div className='hover:animate-pulse ease-in-out'>
+                        <div className='ease-in-out hover:animate-pulse'>
                             <Image
                                 src='/images/paypal-icon.svg'
                                 alt='PayPal'
@@ -201,7 +201,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='w-100 text-center'>
-                        <div className='hover:animate-pulse ease-in-out'>
+                        <div className='ease-in-out hover:animate-pulse'>
                             <Image
                                 src='/images/group-34-icon.svg'
                                 alt='Reflektive'
@@ -212,7 +212,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='w-100 text-center'>
-                        <div className='hover:animate-pulse ease-in-out'>
+                        <div className='ease-in-out hover:animate-pulse'>
                             <Image
                                 src='/images/group-44-icon.svg'
                                 alt='NationBuilder'
@@ -223,7 +223,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='w-100 text-center'>
-                        <div className='hover:animate-pulse ease-in-out'>
+                        <div className='ease-in-out hover:animate-pulse'>
                             <Image
                                 src='/images/tcheck-icon.svg'
                                 alt='tCheck'
@@ -234,7 +234,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='w-100 text-center'>
-                        <div className='hover:animate-pulse ease-in-out'>
+                        <div className='ease-in-out hover:animate-pulse'>
                             <Image
                                 src='/images/group-43-icon.svg'
                                 alt='Thrive Global'
@@ -245,7 +245,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='w-100 text-center'>
-                        <div className='hover:animate-pulse ease-in-out'>
+                        <div className='ease-in-out hover:animate-pulse'>
                             <Image
                                 src='/images/venmo-icon.svg'
                                 alt='Venmo'
@@ -256,7 +256,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='w-100 text-center'>
-                        <div className='hover:animate-pulse ease-in-out'>
+                        <div className='ease-in-out hover:animate-pulse'>
                             <Image
                                 src='/images/group-35-icon.svg'
                                 alt='Daysheets'
@@ -276,7 +276,11 @@ export default function Home() {
                 <div className='text-l grid auto-cols-max grid-flow-col place-items-center overflow-x-auto pb-6 lg:place-content-center lg:overflow-x-auto lg:pb-12'>
                     <div className='max-w-[140px] border-r-2 border-r-orange px-6 py-2 text-center lg:max-w-none'>
                         <button
-                            className='block font-recoleta text-gray'
+                            className={`block font-recoleta ${
+                                activeSkill === 0
+                                    ? 'font-semibold text-black'
+                                    : 'text-gray'
+                            } `}
                             onClick={() => setActiveSkill(0)}
                         >
                             UX Research & Strategy
@@ -285,7 +289,11 @@ export default function Home() {
                     <div className='max-w-[140px] border-r-2 border-r-orange px-6 py-2 text-center lg:max-w-none'>
                         <button
                             onClick={() => setActiveSkill(1)}
-                            className='font-recoleta text-gray'
+                            className={`font-recoleta ${
+                                activeSkill === 1
+                                    ? 'font-semibold text-black'
+                                    : 'text-gray'
+                            }`}
                         >
                             Design Thinking
                         </button>
@@ -293,7 +301,11 @@ export default function Home() {
                     <div className='max-w-[140px] border-r-2 border-r-orange px-6 py-2 text-center lg:max-w-none'>
                         <button
                             onClick={() => setActiveSkill(2)}
-                            className='font-recoleta text-gray'
+                            className={`font-recoleta ${
+                                activeSkill === 2
+                                    ? 'font-semibold text-black'
+                                    : 'text-gray'
+                            }`}
                         >
                             Product Management
                         </button>
@@ -301,7 +313,11 @@ export default function Home() {
                     <div className='max-w-[140px] px-3 py-2 text-center lg:max-w-none'>
                         <button
                             onClick={() => setActiveSkill(3)}
-                            className='font-recoleta text-gray'
+                            className={`font-recoleta ${
+                                activeSkill === 3
+                                    ? 'font-semibold text-black'
+                                    : 'text-gray'
+                            }`}
                         >
                             Business Growth
                         </button>
