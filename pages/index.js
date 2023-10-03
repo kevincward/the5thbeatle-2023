@@ -36,6 +36,18 @@ export default function Home() {
             url: '/case-studies/reflektive',
             image: '/images/hero-background.svg',
         },
+        {
+            title: 'Test Case Study 2',
+            company: 'Reflektive',
+            url: '/case-studies/reflektive',
+            image: '/images/hero-background.svg',
+        },
+        {
+            title: 'Test Case Study 3',
+            company: 'Reflektive',
+            url: '/case-studies/reflektive',
+            image: '/images/hero-background.svg',
+        },
     ];
 
     const skills = [
@@ -138,8 +150,9 @@ export default function Home() {
                         <div className='basis-2/3 overflow-x-auto'>
                             <Swiper
                                 navigation={{ nextEl: '.next-button' }}
-                                slidesPerView='auto'
+                                slidesPerView={'auto'}
                                 spaceBetween={20}
+                                loop={true}
                                 modules={[Navigation]}
                                 className='case-studies-swiper'
                             >
