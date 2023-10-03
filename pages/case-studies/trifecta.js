@@ -11,12 +11,12 @@ export default function Trifecta() {
         {
             title: 'Fostering camaraderie for app retention',
             company: 'Thrive Global',
-            url: '#',
+            url: '/case-studies/thrive',
         },
         {
             title: 'Refreshing a product to encourage self-growth',
             company: 'Reflektive',
-            url: '#',
+            url: '/case-studies/reflektive',
         },
     ];
 
@@ -184,14 +184,15 @@ export default function Trifecta() {
                     },
                 ]}
             />
+            <div className='pb-16'></div>
 
-            <ParallaxBlock image='/images/parallax-background.jpg' />
+            <ParallaxBlock image='/images/cs/trifecta-bkgd-2.png' />
 
-            <div className='scroll-mt-[152px] pb-20' id='section-4'></div>
+            <div className='scroll-mt-[152px] pb-16' id='section-4'></div>
             <TextBlockOne
                 kicker='FEATURED WORK'
                 title='Key projects'
-                aboveContent='Checkout Redesign & Meal Choice'
+                aboveContent='<b>1. Checkout Redesign & Meal Choice</b>'
                 belowContent=''
                 images={[]}
             />
@@ -233,8 +234,8 @@ export default function Trifecta() {
             <TextBlockOne
                 images={[
                     {
-                        desktop: 'trifecta-featured-work-3.gif',
-                        mobile: 'trifecta-featured-work-3.gif',
+                        desktop: '/images/cs/trifecta-featured-work-3.png',
+                        mobile: '/images/cs/trifecta-featured-work-3.png',
                         alt: 'Mobile cart expansion animation',
                         desktopWidth: 1040,
                         desktopHeight: 230,
@@ -273,7 +274,7 @@ export default function Trifecta() {
             <TextBlockOne
                 kicker=''
                 title=''
-                aboveContent='Progress focused app experience'
+                aboveContent='<b>2. Progress focused app experience</b>'
                 belowContent=''
                 images={[]}
             />
@@ -285,14 +286,64 @@ export default function Trifecta() {
                 belowContent=''
                 images={[
                     {
-                        desktop: '/images/desktop-text-block-one-image.svg',
-                        mobile: '/images/mobile-text-block-one-image.svg',
-                        alt: 'Old vs new Trifecta product page',
+                        desktop: '/images/cs/trifecta-featured-work-6.png',
+                        mobile: '/images/cs/trifecta-featured-work-6.png',
+                        alt: 'Trifecta app onboarding screens',
                         desktopWidth: 1040,
                         desktopHeight: 230,
                         mobileWidth: 382,
                         mobileHeight: 230,
-                        caption: 'Product page redesign',
+                        caption: 'Goal and timeline customization',
+                    },
+                ]}
+            />
+
+            <TextBlockOne
+                images={[
+                    {
+                        desktop: '/images/cs/trifecta-featured-work-7.png',
+                        mobile: '/images/cs/trifecta-featured-work-7.png',
+                        alt: 'Weight tracking Trifecta app screen',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: 'Weight tracking',
+                    },
+                    {
+                        desktop: '/images/cs/trifecta-featured-work-8.svg',
+                        mobile: '/images/cs/trifecta-featured-work-8.svg',
+                        alt: 'Macro tracking Trifecta app screen',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: 'Weekly macro tracking',
+                    },
+                ]}
+            />
+
+            <TextBlockOne
+                images={[
+                    {
+                        desktop: '/images/cs/trifecta-featured-work-9.png',
+                        mobile: '/images/cs/trifecta-featured-work-9.png',
+                        alt: 'Goal tracking Trifecta app screens',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: 'Goal & activity tracking',
+                    },
+                    {
+                        desktop: '/images/cs/trifecta-featured-work-10.png',
+                        mobile: '/images/cs/trifecta-featured-work-10.png',
+                        alt: 'Goal completion Trifecta app screen',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: 'Goal accomplished',
                     },
                 ]}
             />
@@ -300,7 +351,7 @@ export default function Trifecta() {
             <TextBlockOne
                 kicker=''
                 title=''
-                aboveContent='Dashboard'
+                aboveContent='<b>3. More user friendly dashboard</b>'
                 belowContent=''
                 images={[]}
             />
@@ -312,14 +363,44 @@ export default function Trifecta() {
                 belowContent=''
                 images={[
                     {
-                        desktop: '/images/desktop-text-block-one-image.svg',
-                        mobile: '/images/mobile-text-block-one-image.svg',
-                        alt: 'Old vs new Trifecta product page',
+                        desktop: '/images/cs/trifecta-featured-work-11.png',
+                        mobile: '/images/cs/trifecta-featured-work-11.png',
+                        alt: 'Old vs new Trifecta dashboard',
                         desktopWidth: 1040,
                         desktopHeight: 230,
                         mobileWidth: 382,
                         mobileHeight: 230,
-                        caption: 'Product page redesign',
+                        caption: '',
+                    },
+                ]}
+            />
+
+            <TextBlockOne
+                images={[
+                    {
+                        desktop: '/images/cs/trifecta-featured-work-12.png',
+                        mobile: '/images/cs/trifecta-featured-work-12.png',
+                        alt: 'Multiple Trifecta dashboard pages on mobile',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: 'Order history, account details, upcoming order',
+                    },
+                ]}
+            />
+
+            <TextBlockOne
+                images={[
+                    {
+                        desktop: '/images/cs/trifecta-featured-work-13.png',
+                        mobile: '/images/cs/trifecta-featured-work-13.png',
+                        alt: 'Trifecta dashboard page on desktop and mobile',
+                        desktopWidth: 1040,
+                        desktopHeight: 230,
+                        mobileWidth: 382,
+                        mobileHeight: 230,
+                        caption: 'Order tracking',
                     },
                 ]}
             />
