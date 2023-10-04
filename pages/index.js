@@ -16,37 +16,37 @@ export default function Home() {
             title: 'Building design into a key business asset',
             company: 'Trifecta',
             url: '/case-studies/trifecta',
-            image: '/images/hero-background.svg',
+            image: '/images/white.svg',
         },
         {
             title: 'Fostering camaraderie for app retention',
             company: 'Thrive Global',
             url: '/case-studies/thrive',
-            image: '/images/medium-bubble.svg',
+            image: '/images/white.svg',
         },
         {
             title: 'Refreshing a product to encourage self-growth',
             company: 'Reflektive',
             url: '/case-studies/reflektive',
-            image: '/images/hero-background.svg',
+            image: '/images/white.svg',
         },
         {
             title: 'Building design into a key business asset',
             company: 'Trifecta',
             url: '/case-studies/trifecta',
-            image: '/images/hero-background.svg',
+            image: '/images/white.svg',
         },
         {
             title: 'Fostering camaraderie for app retention',
             company: 'Thrive Global',
             url: '/case-studies/thrive',
-            image: '/images/medium-bubble.svg',
+            image: '/images/white.svg',
         },
         {
             title: 'Refreshing a product to encourage self-growth',
             company: 'Reflektive',
             url: '/case-studies/reflektive',
-            image: '/images/hero-background.svg',
+            image: '/images/white.svg',
         },
     ];
 
@@ -75,30 +75,20 @@ export default function Home() {
 
     const projects = [
         {
-            title: 'Trifecta App Redesign',
-            image: 'project-placeholder.svg',
-            url: '#',
+            title: 'People Analytics Dashboard',
+            image: 'project-pi.svg',
+            url: '/projects/pi',
         },
         {
-            title: 'Employee Analytics Dashboard',
-            image: 'project-placeholder.svg',
-            url: '#',
-        },
-        {
-            title: 'Marketing LP Components',
-            image: 'project-placeholder.svg',
-            url: '#',
-        },
-        {
-            title: 'tCheck App',
-            image: 'project-placeholder.svg',
-            url: '#',
+            title: 'Landing Page Components',
+            image: 'project-lpcomp.svg',
+            url: '/projects/lpcomponents',
         },
     ];
 
     const [activeSkill, setActiveSkill] = useState(0);
     const [activeCaseStudyImage, setActiveCaseStudyImage] = useState(
-        '/images/hero-background.svg',
+        '/images/white.svg',
     );
 
     return (
@@ -313,8 +303,8 @@ export default function Home() {
                     <div className='max-w-[140px] border-r-2 border-r-orange px-6 py-2 text-center lg:max-w-none'>
                         <button
                             className={`block font-recoleta ${activeSkill === 0
-                                    ? 'font-semibold text-black'
-                                    : 'text-gray'
+                                ? 'font-semibold text-black'
+                                : 'text-gray'
                                 } `}
                             onClick={() => setActiveSkill(0)}
                         >
@@ -325,8 +315,8 @@ export default function Home() {
                         <button
                             onClick={() => setActiveSkill(1)}
                             className={`font-recoleta ${activeSkill === 1
-                                    ? 'font-semibold text-black'
-                                    : 'text-gray'
+                                ? 'font-semibold text-black'
+                                : 'text-gray'
                                 }`}
                         >
                             Design Thinking
@@ -336,8 +326,8 @@ export default function Home() {
                         <button
                             onClick={() => setActiveSkill(2)}
                             className={`font-recoleta ${activeSkill === 2
-                                    ? 'font-semibold text-black'
-                                    : 'text-gray'
+                                ? 'font-semibold text-black'
+                                : 'text-gray'
                                 }`}
                         >
                             Product Management
@@ -347,8 +337,8 @@ export default function Home() {
                         <button
                             onClick={() => setActiveSkill(3)}
                             className={`font-recoleta ${activeSkill === 3
-                                    ? 'font-semibold text-black'
-                                    : 'text-gray'
+                                ? 'font-semibold text-black'
+                                : 'text-gray'
                                 }`}
                         >
                             Business Growth
