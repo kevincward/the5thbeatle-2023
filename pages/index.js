@@ -76,12 +76,12 @@ export default function Home() {
     const projects = [
         {
             title: 'People Analytics Dashboard',
-            image: 'project-pi.svg',
+            image: 'project-pi.png',
             url: '/projects/pi',
         },
         {
             title: 'Landing Page Components',
-            image: 'project-lpcomp.svg',
+            image: 'project-lpcomp.png',
             url: '/projects/lpcomponents',
         },
     ];
