@@ -28,12 +28,12 @@ export default function MoreStudies(props) {
                                 </p>
                                 <div className='mb-2 h-[1px] w-[5.0625rem] bg-orange lg:mb-4'></div>
                                 <a
-                                    className='font-recoleta font-semibold text-purple'
+                                    className='font-recoleta font-semibold text-purple group'
                                     href={caseStudies[key].url}
                                 >
                                     View Project{' '}
                                     <Image
-                                        className='inline-block'
+                                        className='inline-block group-hover:translate-x-1 transition-transform'
                                         src='/images/ic_arrow.svg'
                                         alt='view project'
                                         height={24}

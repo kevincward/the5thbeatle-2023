@@ -220,15 +220,13 @@ export default function Home() {
                 </h2>
                 <div className='mx-auto grid max-w-[42rem] grid-cols-4 gap-4 gap-x-0 lg:grid-cols-8'>
                     <div className='w-100 text-center'>
-                        <div className='ease-in-out hover:animate-pulse'>
-                            <Image
-                                src='/images/trifecta-app-icon.svg'
-                                alt='Trifecta'
-                                height={56}
-                                width={56}
-                                className='inline-block'
-                            />
-                        </div>
+                        <Image
+                            src='/images/trifecta-app-icon.svg'
+                            alt='Trifecta'
+                            height={56}
+                            width={56}
+                            class='inline-block transform transition-all hover:translate-x-4'
+                        />
                     </div>
                     <div className='w-100 text-center'>
                         <div className='ease-in-out hover:animate-pulse'>
@@ -264,7 +262,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='w-100 text-center'>
-                        <div className='ease-in-out hover:animate-pulse'>
+                        <div className='transform motion-reduce:transform-none'>
                             <Image
                                 src='/images/tcheck-icon.svg'
                                 alt='tCheck'

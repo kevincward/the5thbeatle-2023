@@ -14,7 +14,7 @@ export default function Header() {
             <div className='mx-auto max-w-[650px]'>
                 <div className='px-3 py-5'>
                     <div className='grid grid-cols-3 items-center lg:flex lg:grid-cols-none lg:justify-between'>
-                        <div className=''>
+                        <div className='transition ease-in-out transform hover:scale-105 motion-reduce:transform-none'>
                             <button
                                 className='lg:hidden'
                                 onClick={() => {
@@ -55,13 +55,13 @@ export default function Header() {
                                 />
                             </Link>
                             <div className='hidden items-center lg:flex'>
-                                <div className='pr-5 font-recoleta font-bold lg:pr-20'>
+                                <div className='pr-5 font-recoleta font-bold lg:pr-20 hover:text-green'>
                                     <Link href='/#anchor-cs'>Work</Link>
                                 </div>
-                                <div className='pr-5 font-recoleta font-bold lg:pr-20'>
+                                <div className='pr-5 font-recoleta font-bold lg:pr-20 hover:text-green'>
                                     <Link href='/about'>About</Link>
                                 </div>
-                                <div className='font-recoleta font-bold'>
+                                <div className='font-recoleta font-bold hover:text-green'>
                                     <a
                                         target='_blank'
                                         href='https://drive.google.com/file/d/1N1IttPv_fevsnSUZ5rXSlU0xVCEWgntp/view'
@@ -74,7 +74,7 @@ export default function Header() {
                         <div className='text-right'>
                             <a
                                 href='mailto:kevinis@the5thbeatle.com'
-                                className='hover:bg-purple-700 inline-block rounded bg-purple px-4 py-2 font-recoleta font-semibold text-white'
+                                className='hover:bg-mediumPurple inline-block rounded bg-purple px-4 py-2 font-recoleta font-semibold text-white'
                             >
                                 Let&apos;s Jam
                             </a>
