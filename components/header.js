@@ -74,7 +74,7 @@ export default function Header() {
                         <div className='text-right'>
                             <a
                                 href='mailto:kevinis@the5thbeatle.com'
-                                className='hover:bg-mediumPurple inline-block rounded bg-purple px-4 py-2 font-recoleta font-semibold text-white'
+                                className='inline-block rounded bg-purple px-4 py-2 font-recoleta font-semibold text-white hover:bg-mediumPurple duration-500 ease'
                             >
                                 Let&apos;s Jam
                             </a>
