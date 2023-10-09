@@ -186,12 +186,12 @@ export default function Home() {
                                             </p>
                                             <div className='mb-2 h-[1px] w-[5.0625rem] bg-orange lg:mb-4'></div>
                                             <a
-                                                className='font-recoleta font-semibold text-purple'
+                                                className='font-recoleta font-semibold text-purple group'
                                                 href={caseStudies[key].url}
                                             >
                                                 View Project{' '}
                                                 <Image
-                                                    className='inline-block'
+                                                    className='inline-block group-hover:translate-x-1 transition-transform'
                                                     src='/images/ic_arrow.svg'
                                                     alt='view project'
                                                     height={24}
@@ -202,7 +202,7 @@ export default function Home() {
                                     </SwiperSlide>
                                 ))}
                             </Swiper>
-                            <div className='next-button absolute right-8 top-[50%] z-[999]'>
+                            <div className='next-button absolute right-8 top-[50%] z-[999] hover:translate-x-1 transition-transform'>
                                 <Image
                                     src='/images/next-button.svg'
                                     width={48}
