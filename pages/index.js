@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import Script from 'next/script';
 
 import caseStudiesBg from '../public/images/case-studies-background.svg';
 import projectsBg from '../public/images/ocean-background.svg';
@@ -93,6 +94,20 @@ export default function Home() {
 
     return (
         <main className='pt-20'>
+
+            <div className="container">
+                <Script src="https://www.googletagmanager.com/gtag/js?id=UA-107426964-2" />
+                <Script id="google-analytics">
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                
+                        gtag('config', 'UA-107426964-2');
+                        `}
+                </Script>
+            </div>
+
             <div className='container relative'>
                 <div className='flex'>
                     <div className='lg:basis-1/2'>
