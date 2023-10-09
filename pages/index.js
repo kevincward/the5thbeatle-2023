@@ -164,7 +164,7 @@ export default function Home() {
                                 {Object.keys(caseStudies).map((key) => (
                                     <SwiperSlide key={key}>
                                         <div
-                                            className='case-study-card w-[170px] rounded bg-white p-6 drop-shadow lg:w-[350px]'
+                                            className='case-study-card w-[170px] rounded bg-white p-6 drop-shadow lg:w-[350px] hover:shadow-xl transition-shadow duration-300 ease-in-out'
                                             onClick={() => {
                                                 setActiveCaseStudyImage(
                                                     caseStudies[key].image,
@@ -207,103 +207,89 @@ export default function Home() {
                                     src='/images/next-button.svg'
                                     width={48}
                                     height={48}
-                                    alt='next case study button'
+                                    alt='Next case study'
                                 />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='teams container py-16 lg:py-24'>
+            <div className='teams container py-16 lg:py-24 scroll-smooth delay-300ms duration-600ms'>
                 <h2 className='pb-8 text-center font-recoleta text-4xl font-semibold'>
                     I&apos;ve worked with big and small teams
                 </h2>
                 <div className='mx-auto grid max-w-[42rem] grid-cols-4 gap-4 gap-x-0 lg:grid-cols-8'>
                     <div className='w-100 text-center'>
                         <Image
+                            src='/images/paypal-icon.svg'
+                            alt='PayPal'
+                            height={56}
+                            width={56}
+                            className='inline-block transform transition-all hover:scale-105'
+                        />
+                    </div>
+                    <div className='w-100 text-center'>
+                        <Image
                             src='/images/trifecta-app-icon.svg'
                             alt='Trifecta'
                             height={56}
                             width={56}
-                            class='inline-block transform transition-all hover:translate-x-4'
+                            class='inline-block transform transition-all hover:scale-105'
                         />
                     </div>
                     <div className='w-100 text-center'>
-                        <div className='ease-in-out hover:animate-pulse'>
-                            <Image
-                                src='/images/paypal-icon.svg'
-                                alt='PayPal'
-                                height={56}
-                                width={56}
-                                className='inline-block'
-                            />
-                        </div>
+                        <Image
+                            src='/images/group-34-icon.svg'
+                            alt='Reflektive'
+                            height={56}
+                            width={56}
+                            className='inline-block transform transition-all hover:scale-105'
+                        />
                     </div>
                     <div className='w-100 text-center'>
-                        <div className='ease-in-out hover:animate-pulse'>
-                            <Image
-                                src='/images/group-34-icon.svg'
-                                alt='Reflektive'
-                                height={56}
-                                width={56}
-                                className='inline-block'
-                            />
-                        </div>
+                        <Image
+                            src='/images/group-44-icon.svg'
+                            alt='NationBuilder'
+                            height={56}
+                            width={56}
+                            className='inline-block transform transition-all hover:scale-105'
+                        />
                     </div>
                     <div className='w-100 text-center'>
-                        <div className='ease-in-out hover:animate-pulse'>
-                            <Image
-                                src='/images/group-44-icon.svg'
-                                alt='NationBuilder'
-                                height={56}
-                                width={56}
-                                className='inline-block'
-                            />
-                        </div>
+                        <Image
+                            src='/images/tcheck-icon.svg'
+                            alt='tCheck'
+                            height={56}
+                            width={56}
+                            className='inline-block transform transition-all hover:scale-105'
+                        />
                     </div>
                     <div className='w-100 text-center'>
-                        <div className='transform motion-reduce:transform-none'>
-                            <Image
-                                src='/images/tcheck-icon.svg'
-                                alt='tCheck'
-                                height={56}
-                                width={56}
-                                className='inline-block'
-                            />
-                        </div>
+                        <Image
+                            src='/images/group-43-icon.svg'
+                            alt='Thrive Global'
+                            height={56}
+                            width={56}
+                            className='inline-block transform transition-all hover:scale-105'
+                        />
                     </div>
                     <div className='w-100 text-center'>
-                        <div className='ease-in-out hover:animate-pulse'>
-                            <Image
-                                src='/images/group-43-icon.svg'
-                                alt='Thrive Global'
-                                height={56}
-                                width={56}
-                                className='inline-block'
-                            />
-                        </div>
+                        <Image
+                            src='/images/venmo-icon.svg'
+                            alt='Venmo'
+                            height={56}
+                            width={56}
+                            className='inline-block transform transition-all hover:scale-105'
+                        />
                     </div>
                     <div className='w-100 text-center'>
-                        <div className='ease-in-out hover:animate-pulse'>
-                            <Image
-                                src='/images/venmo-icon.svg'
-                                alt='Venmo'
-                                height={56}
-                                width={56}
-                                className='inline-block'
-                            />
-                        </div>
-                    </div>
-                    <div className='w-100 text-center'>
-                        <div className='ease-in-out hover:animate-pulse'>
-                            <Image
-                                src='/images/group-35-icon.svg'
-                                alt='Daysheets'
-                                height={56}
-                                width={56}
-                                className='inline-block'
-                            />
-                        </div>
+                        <Image
+                            src='/images/group-35-icon.svg'
+                            alt='Daysheets'
+                            height={56}
+                            width={56}
+                            className='inline-block transform transition-all hover:scale-105'
+                        />
                     </div>
                 </div>
             </div>
