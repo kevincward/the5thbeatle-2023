@@ -15,9 +15,9 @@ export default function Thrive() {
             url: '/case-studies/reflektive',
         },
         {
-            title: 'Building design into a key business asset',
-            company: 'Trifecta',
-            url: '/case-studies/trifecta',
+            title: 'Crafting a seamless donation app experience',
+            company: 'PayPal',
+            url: '/case-studies/paypal-app',
         },
     ];
 

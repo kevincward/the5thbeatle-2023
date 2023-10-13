@@ -10,14 +10,14 @@ import MoreStudies from '@/components/moreStudies';
 export default function Reflektive() {
     const caseStudies = [
         {
+            title: 'Crafting a seamless donation app experience',
+            company: 'PayPal',
+            url: '/case-studies/paypal-app',
+        },
+        {
             title: 'Building design into a key business asset',
             company: 'Trifecta',
             url: '/case-studies/trifecta',
-        },
-        {
-            title: 'Fostering camaraderie for app retention',
-            company: 'Thrive Global',
-            url: '/case-studies/thrive',
         },
     ];
 
@@ -39,9 +39,9 @@ export default function Reflektive() {
 
             <div className='scroll-mt-[152px] pb-8' id='section-1'></div>
             <ContextCard
-                titleColor='#085735'
+                titleColor='#7C4D0F'
                 textColor='#060125'
-                backgroundColor='#A9E2C9'
+                backgroundColor='#FDEBD2'
                 content={{
                     kicker: 'ABOUT REFLEKTIVE',
                     description:

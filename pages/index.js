@@ -33,6 +33,12 @@ export default function Home() {
             image: '/images/white.svg',
         },
         {
+            title: 'Crafting a seamless donation app experience',
+            company: 'PayPal',
+            url: '/case-studies/paypal-app',
+            image: '/images/white.svg',
+        },
+        {
             title: 'Building design into a key business asset',
             company: 'Trifecta',
             url: '/case-studies/trifecta',
@@ -48,6 +54,12 @@ export default function Home() {
             title: 'Refreshing a product to encourage self-growth',
             company: 'Reflektive',
             url: '/case-studies/reflektive',
+            image: '/images/white.svg',
+        },
+        {
+            title: 'Crafting a seamless donation app experience',
+            company: 'PayPal',
+            url: '/case-studies/paypal-app',
             image: '/images/white.svg',
         },
     ];
