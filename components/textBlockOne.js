@@ -43,6 +43,7 @@ export default function TextBlockOne(props) {
                                         width={images[key].desktopWidth}
                                         height={images[key].desktopHeight}
                                         className='hidden lg:block'
+                                        unoptimized={true}
                                     />
                                 </a>
                                 <a onClick={() => setIsOpen(true)}>
@@ -52,6 +53,7 @@ export default function TextBlockOne(props) {
                                         width={images[key].mobileWidth}
                                         height={images[key].mobileHeight}
                                         className='lg:hidden'
+                                        unoptimized={true}
                                     />
                                 </a>
                                 {images[key].caption &&
@@ -93,6 +95,7 @@ export default function TextBlockOne(props) {
                                             width={images[key].desktopWidth}
                                             height={images[key].desktopHeight}
                                             className='hidden lg:block'
+                                            unoptimized={true}
                                         />
                                         <Image
                                             src={images[key].mobile}
@@ -100,6 +103,7 @@ export default function TextBlockOne(props) {
                                             width={images[key].mobileWidth}
                                             height={images[key].mobileHeight}
                                             className='lg:hidden'
+                                            unoptimized={true}
                                         />
                                     </Dialog.Panel>
                                 </div>

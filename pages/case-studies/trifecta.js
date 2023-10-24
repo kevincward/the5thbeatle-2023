@@ -189,19 +189,14 @@ export default function Trifecta() {
             <ParallaxBlock image='/images/cs/trifecta-bkgd-2.png' />
 
             <div className='scroll-mt-[152px] pb-16' id='section-4'></div>
+
             <TextBlockOne
                 kicker='FEATURED WORK'
                 title='Key projects'
-                aboveContent='<b>1. Checkout Redesign & Meal Choice</b>'
-                belowContent=''
-                images={[]}
-            />
-
-            <div className='pb-8'></div>
-            <TextBlockOne
-                kicker=''
-                title=''
-                aboveContent='Trifecta&lsquo;s existing checkout flow suffered from significant drop-offs due to its clunky, confusing nature and lack of crucial details. Leveraging the new Trifecta design system, checkout UX conventions, and incorporating customer feedback, I lead a comprehensive redesign of the checkout experience. This transformation resulted in an 24% increase in checkout page conversions, coupled with an 18% reduction in flow time. The redesigned checkout not only paved the way for introducing meal selection but also facilitated the initiation of A/B testing.'
+                aboveContent='<b>1. Checkout Redesign & Meal Choice</b>
+                <br />
+                <br />
+                Trifecta&lsquo;s existing checkout flow suffered from significant drop-offs due to its clunky, confusing nature and lack of crucial details. Leveraging the new Trifecta design system, checkout UX conventions, and incorporating customer feedback, I lead a comprehensive redesign of the checkout experience. This transformation resulted in an 24% increase in checkout page conversions, coupled with an 18% reduction in flow time. The redesigned checkout not only paved the way for introducing meal selection but also facilitated the initiation of A/B testing.'
                 belowContent=''
                 images={[
                     {
@@ -237,8 +232,8 @@ export default function Trifecta() {
             <TextBlockOne
                 images={[
                     {
-                        desktop: '/images/cs/trifecta-featured-work-3.png',
-                        mobile: '/images/cs/trifecta-featured-work-3.png',
+                        desktop: '/images/cs/trifecta-featured-work-3.gif',
+                        mobile: '/images/cs/trifecta-featured-work-3.gif',
                         alt: 'Mobile cart expansion animation',
                         desktopWidth: 1040,
                         desktopHeight: 230,

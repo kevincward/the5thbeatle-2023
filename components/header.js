@@ -5,6 +5,9 @@ import { Dialog, Transition } from '@headlessui/react';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
 
     return (
         <header
@@ -14,7 +17,7 @@ export default function Header() {
             <div className='mx-auto max-w-[650px]'>
                 <div className='px-3 py-5'>
                     <div className='grid grid-cols-3 items-center lg:flex lg:grid-cols-none lg:justify-between'>
-                        <div className='transition ease-in-out transform hover:scale-105 motion-reduce:transform-none'>
+                        <div className=''>
                             <button
                                 className='lg:hidden'
                                 onClick={() => {
@@ -29,36 +32,39 @@ export default function Header() {
                                             ? '/images/close-button.svg'
                                             : '/images/menu-button.svg'
                                     }
-                                    width={40}
-                                    height={40}
+                                    width={32}
+                                    height={32}
                                     alt='Menu button'
                                 />
                             </button>
                             <Link href='/'>
                                 <Image
-                                    src='/images/the-f5th-beetle-logo.svg'
-                                    alt='The 5th Beetle Logo - Kevin Ward'
+                                    src='/images/the-5th-beatle-logo.svg'
+                                    alt='The 5th Beatle Logo - Kevin Ward'
                                     width={40}
                                     height={40}
-                                    className='hidden lg:inline-block'
+                                    className='hidden lg:inline-block hover:scale-105 duration-500 ease'
                                 />
                             </Link>
                         </div>
                         <div className='text-center'>
                             <Link href='/'>
                                 <Image
-                                    src='/images/the-f5th-beetle-logo.svg'
-                                    alt='The 5th Beetle Logo - Kevin Ward'
+                                    src='/images/the-5th-beatle-logo.svg'
+                                    alt='The 5th Beatle Logo - Kevin Ward'
                                     width={40}
                                     height={40}
-                                    className='inline-block lg:hidden'
+                                    className='inline-block lg:hidden hover:scale-105 duration-500 ease'
                                 />
                             </Link>
                             <div className='hidden items-center lg:flex'>
-                                <div className='pr-5 font-recoleta font-bold lg:pr-20 hover:text-green'>
+                                <div className='pr-5 font-recoleta font-bold lg:pr-20 hover:text-green'
+                                >
                                     <Link href='/#anchor-cs'>Work</Link>
                                 </div>
-                                <div className='pr-5 font-recoleta font-bold lg:pr-20 hover:text-green'>
+                                <div className='pr-5 font-recoleta font-bold lg:pr-20 hover:text-green'
+                                    onClick={closeMenu}
+                                >
                                     <Link href='/about'>About</Link>
                                 </div>
                                 <div className='font-recoleta font-bold hover:text-green'>
@@ -96,11 +102,15 @@ export default function Header() {
                     aria-hidden='true'
                 />
                 <div className='fixed top-[86px] mt-[68px] w-screen justify-center px-3  pt-5'>
-                    <div className='grid grid-cols-1 gap-4 pt-5 text-center'>
+                    <div className='grid grid-cols-1 gap-4 pt-5 text-center'
+                        onClick={closeMenu}>
                         <div>
-                            <a className='font-recoleta text-3xl font-semibold text-white'>
+                            <Link
+                                href='/#anchor-cs'
+                                className='font-recoleta text-3xl font-semibold text-white'
+                            >
                                 Work
-                            </a>
+                            </Link>
                         </div>
                         <div>
                             <Link
