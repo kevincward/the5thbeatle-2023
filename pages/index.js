@@ -374,7 +374,7 @@ export default function Home() {
                                         {skills[activeSkill].description}
                                     </p>
                                     <div className='flex justify-center lg:justify-start'>
-                                        <button className='mr-3'>
+                                        <button className='mr-3 hover:translate-y-1 transition-transform'>
                                             <Image
                                                 src='/images/previous-button.svg'
                                                 width={48}
@@ -392,7 +392,7 @@ export default function Home() {
                                                     }
                                                 }} />
                                         </button>
-                                        <button>
+                                        <button className='hover:translate-y-1 transition-transform'>
                                             <Image
                                                 src='/images/next-button.svg'
                                                 width={48}
@@ -470,7 +470,7 @@ export default function Home() {
                                                 >
                                                     View{' '}
                                                     <Image
-                                                        className='inline-block'
+                                                        className='inline-block group-hover:translate-x-1 transition-transform'
                                                         src='/images/ic_arrow.svg'
                                                         alt='view project'
                                                         height={24}

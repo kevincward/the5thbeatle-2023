@@ -21,7 +21,7 @@ export default function Footer() {
                 </div>
                 <div className='lg:text-right'>
                     <a
-                        className='mr-5 inline-block'
+                        className='mr-5 inline-block hover:scale-110 duration-500 ease'
                         href='https://www.linkedin.com/in/kcwdesigner'
                         target='_blank'
                     >
@@ -33,7 +33,7 @@ export default function Footer() {
                         />
                     </a>
                     <a
-                        className='inline-block'
+                        className='inline-block hover:scale-110 duration-500 ease'
                         href='https://open.spotify.com/playlist/01xUdZEaNRvGNam15QJUP0?si=d6nn8RrFSieXS78lgK-E5A'
                         target='_blank'
                     >
@@ -54,7 +54,7 @@ export default function Footer() {
                         alt='peace and love icon'
                         height={16}
                         width={16}
-                        className='ml-2 inline'
+                        className='ml-2 inline hover:scale-110 duration-500 ease'
                     />
                 </p>
             </div>

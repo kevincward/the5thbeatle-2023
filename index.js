@@ -23,12 +23,12 @@ export default function Home() {
             url: '#',
         },
         {
-            title: 'Feature redesign to encourage continuous improvement',
+            title: 'Refreshing a product to encourage self-growth',
             company: 'Reflektive',
             url: '#',
         },
         {
-            title: 'How to remind (not nag) people to donate',
+            title: 'Crafting a seamless donation app experience',
             company: 'PayPal',
             url: '#',
         },
@@ -419,7 +419,7 @@ export default function Home() {
                                             >
                                                 View{' '}
                                                 <Image
-                                                    className='inline-block'
+                                                    className='inline-block group-hover:translate-x-1 transition-transform'
                                                     src='/images/ic_arrow.svg'
                                                     alt='view project'
                                                     height={24}
