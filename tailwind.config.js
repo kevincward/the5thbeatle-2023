@@ -26,6 +26,7 @@ module.exports = {
                 red: '#EF4266',
                 mediumPurple: '#3B094D',
                 green: '#0FAD69',
+                line_gray: '#D9D9D9'
 
             },
             container: {

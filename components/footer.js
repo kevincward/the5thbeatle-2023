@@ -33,6 +33,18 @@ export default function Footer() {
                         />
                     </a>
                     <a
+                        className='mr-5 inline-block hover:scale-110 duration-500 ease'
+                        href='https://github.com/kevincward'
+                        target='_blank'
+                    >
+                        <Image
+                            src='/images/github-logo.svg'
+                            alt='Kevins GitHub Link'
+                            height={24}
+                            width={24}
+                        />
+                    </a>
+                    <a
                         className='inline-block hover:scale-110 duration-500 ease'
                         href='https://open.spotify.com/playlist/01xUdZEaNRvGNam15QJUP0?si=d6nn8RrFSieXS78lgK-E5A'
                         target='_blank'
