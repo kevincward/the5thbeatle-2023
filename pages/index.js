@@ -199,7 +199,9 @@ export default function Home() {
                                                 }}
                                             >
                                                 <p className='pb-8 lg:pb-10'>
-                                                    <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-2xl'>
+                                                    <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-2xl'
+                                                        href={caseStudies[key].url}
+                                                    >
                                                         {caseStudies[key].title}
                                                     </a>
                                                 </p>
