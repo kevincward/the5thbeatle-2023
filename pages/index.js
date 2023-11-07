@@ -267,13 +267,14 @@ export default function Home() {
                             I&apos;ve worked with big and small teams
                         </h2>
                         <div className='mx-auto grid max-w-[42rem] grid-cols-4 gap-4 gap-x-0 lg:grid-cols-8'>
-                            <div className='w-100 text-center'>
+                            <div className='w-100 text-center relative group'>
                                 <Image
                                     src='/images/paypal-icon.svg'
                                     alt='PayPal'
                                     height={56}
                                     width={56}
-                                    className='inline-block transform transition-all hover:scale-105' />
+                                    className='inline-block transform transition-all hover:scale-105'
+                                    title='PayPal' />
                             </div>
                             <div className='w-100 text-center'>
                                 <Image
@@ -281,7 +282,8 @@ export default function Home() {
                                     alt='Trifecta'
                                     height={56}
                                     width={56}
-                                    class='inline-block transform transition-all hover:scale-105' />
+                                    class='inline-block transform transition-all hover:scale-105'
+                                    title='Trifecta' />
                             </div>
                             <div className='w-100 text-center'>
                                 <Image
@@ -289,7 +291,8 @@ export default function Home() {
                                     alt='Reflektive'
                                     height={56}
                                     width={56}
-                                    className='inline-block transform transition-all hover:scale-105' />
+                                    className='inline-block transform transition-all hover:scale-105'
+                                    title='Reflektive' />
                             </div>
                             <div className='w-100 text-center'>
                                 <Image
@@ -297,7 +300,8 @@ export default function Home() {
                                     alt='NationBuilder'
                                     height={56}
                                     width={56}
-                                    className='inline-block transform transition-all hover:scale-105' />
+                                    className='inline-block transform transition-all hover:scale-105'
+                                    title='NationBuilder' />
                             </div>
                             <div className='w-100 text-center'>
                                 <Image
@@ -305,7 +309,8 @@ export default function Home() {
                                     alt='tCheck'
                                     height={56}
                                     width={56}
-                                    className='inline-block transform transition-all hover:scale-105' />
+                                    className='inline-block transform transition-all hover:scale-105'
+                                    title='tCheck' />
                             </div>
                             <div className='w-100 text-center'>
                                 <Image
@@ -313,7 +318,8 @@ export default function Home() {
                                     alt='Thrive Global'
                                     height={56}
                                     width={56}
-                                    className='inline-block transform transition-all hover:scale-105' />
+                                    className='inline-block transform transition-all hover:scale-105'
+                                    title='Thrive Global' />
                             </div>
                             <div className='w-100 text-center'>
                                 <Image
@@ -321,7 +327,8 @@ export default function Home() {
                                     alt='Venmo'
                                     height={56}
                                     width={56}
-                                    className='inline-block transform transition-all hover:scale-105' />
+                                    className='inline-block transform transition-all hover:scale-105'
+                                    title='Venmo' />
                             </div>
                             <div className='w-100 text-center'>
                                 <Image
@@ -329,7 +336,8 @@ export default function Home() {
                                     alt='Daysheets'
                                     height={56}
                                     width={56}
-                                    className='inline-block transform transition-all hover:scale-105' />
+                                    className='inline-block transform transition-all hover:scale-105'
+                                    title='Daysheets' />
                             </div>
                         </div>
                     </div>
@@ -518,13 +526,15 @@ export default function Home() {
                                             <div className='basis-3/4 lg:pr-8'>
                                                 <div className='project-card ml-2 rounded bg-white p-4 drop-shadow lg:-mb-10'>
                                                     <p className='pb-4'>
-                                                        <a className='font-recoleta text-[1.3125rem] font-semibold leading-5'>
+                                                        <a className='font-recoleta text-[1.3125rem] font-semibold leading-5'
+                                                            href={projects[key].url}
+                                                        >
                                                             {projects[key].title}
                                                         </a>
                                                     </p>
 
                                                     <a
-                                                        className='font-recoleta font-semibold text-purple'
+                                                        className='font-recoleta font-semibold text-purple group relative'
                                                         href={projects[key].url}
                                                     >
                                                         View{' '}
