@@ -1,13 +1,39 @@
 import Image from 'next/image';
-import moreStudiesBg from '@/public/images/more-studies-abstract.svg';
+import moreStudiesBg1 from '@/public/images/more-studies-abstract-1.svg';
+import moreStudiesBg2 from '@/public/images/more-studies-abstract-2.svg';
+import moreStudiesBg3 from '@/public/images/more-studies-abstract-3.svg';
 
-export default function MoreStudies(props) {
+export function getRandomImageIndex() {
+    return Math.floor(Math.random() * 3);
+}
+
+
+export default function moreStudies(props) {
     const { title, caseStudies } = props;
+    const randomImageIndex = getRandomImageIndex();
+
+    let selectedImage;
+    switch (randomImageIndex) {
+        case 0:
+            selectedImage = moreStudiesBg1;
+            break;
+        case 1:
+            selectedImage = moreStudiesBg2;
+            break;
+        case 2:
+            selectedImage = moreStudiesBg3;
+            break;
+        default:
+            // Handle unexpected index
+            selectedImage = titleBlockBg1; // Default to the first image
+            break;
+    }
+
     return (
         <div
             className='bg-left-bottom py-12'
             style={{
-                backgroundImage: `url(${moreStudiesBg.src})`,
+                backgroundImage: `url(${selectedImage.src})`,
                 backgroundRepeat: 'no-repeat',
             }}
         >
