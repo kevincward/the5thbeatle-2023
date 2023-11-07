@@ -25,7 +25,7 @@ export default function moreStudies(props) {
             break;
         default:
             // Handle unexpected index
-            selectedImage = titleBlockBg1; // Default to the first image
+            selectedImage = moreStudiesBg1; // Default to the first image
             break;
     }
 
