@@ -1,3 +1,5 @@
+This is my portfolio code. With a little help from my case studies, learn more about my product strategy and design thinking at https://the5thbeatle.com/
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
