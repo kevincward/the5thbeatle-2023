@@ -30,7 +30,7 @@ export default function Trifecta() {
                 title='Building design into a key business asset'
             />
 
-            <ParallaxBlock image='/images/cs/trifecta-bkgd-1.png' />
+            <ParallaxBlock image='/images/cs/trifecta-bkgd-1.png' bgColor='rgba(114, 200, 185, 1)' />
 
             <SecondaryNav
                 sectionOneTitle='Overview'
@@ -186,7 +186,7 @@ export default function Trifecta() {
             />
             <div className='pb-16'></div>
 
-            <ParallaxBlock image='/images/cs/trifecta-bkgd-2.png' />
+            <ParallaxBlock image='/images/cs/trifecta-bkgd-2.png' bgColor='rgba(114, 200, 185, 1)' />
 
             <div className='scroll-mt-[152px] pb-16' id='section-4'></div>
 

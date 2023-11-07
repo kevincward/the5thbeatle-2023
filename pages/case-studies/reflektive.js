@@ -28,7 +28,7 @@ export default function Reflektive() {
                 title='Refreshing a product to encourage self-growth'
             />
 
-            <ParallaxBlock image='/images/cs/reflektive-bkgd-1.png' />
+            <ParallaxBlock image='/images/cs/reflektive-bkgd-1.png' bgColor='rgba(61,90,254)' />
 
             <SecondaryNav
                 sectionOneTitle='Overview'
@@ -316,7 +316,7 @@ export default function Reflektive() {
             />
             <div className='pt-16'></div>
 
-            <ParallaxBlock image='/images/cs/reflektive-bkgd-2.png' />
+            <ParallaxBlock image='/images/cs/reflektive-bkgd-2.png' bgColor='rgba(61,90,254)' />
 
             <div className='scroll-mt-[152px] pb-20' id='section-4'></div>
             <TextBlockOne

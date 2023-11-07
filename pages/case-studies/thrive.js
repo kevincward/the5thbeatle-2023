@@ -28,7 +28,7 @@ export default function Thrive() {
                 title='Fostering camaraderie for stronger app retention'
             />
 
-            <ParallaxBlock image='/images/cs/thrive-bkgd-1.png' />
+            <ParallaxBlock image='/images/cs/thrive-bkgd-1.png' bgColor='rgba(48,98,103)' />
 
             <SecondaryNav
                 sectionOneTitle='Overview'

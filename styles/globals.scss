@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 .heading-decoration {
-  text-shadow: 0px 2px 0px #F7991E, 0px 4px 0px #FFD23E;
+	text-shadow: 0px 2px 0px #F7991E, 0px 4px 0px #FFD23E;
 }
 
 .case-studies-swiper {
@@ -16,4 +16,15 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-  }
+}
+
+.teams.fade-up {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.teams.fade-up.active {
+	opacity: 1;
+	transform: translateY(0);
+}

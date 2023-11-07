@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import TextBlockTwo from '@/components/textBlockTwo';
 import Timeline from '@/components/timeline';
+import { useEffect, useState } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { InView } from 'react-intersection-observer';
 
 export default function About() {
     const titlesData = ["There are places I remember,<br />all my life"];
@@ -54,6 +57,8 @@ export default function About() {
         caption: 'The gang back in the day',
     };
 
+    const [timelineVisible, setTimelineVisible] = useState(false);
+
     return (
         <main className='pt-20'>
             <TextBlockTwo
@@ -79,12 +84,28 @@ export default function About() {
                 }}
             />
             <div className='pt-16'></div>
-            <Timeline
-                titles={titlesData}
-                timelines={timelinesData}
-                image={image}
-            />
 
+            <InView
+                as={motion.div}
+                initial='hidden'
+                animate={timelineVisible ? 'visible' : 'hidden'}
+                variants={{
+                    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+                    hidden: { opacity: 0, y: 200, transition: { duration: 0.5 } },
+                }}
+                onChange={(inView) => {
+                    if (inView) {
+                        setTimelineVisible(true);
+                    }
+                }}
+            >
+
+                <Timeline
+                    titles={titlesData}
+                    timelines={timelinesData}
+                    image={image}
+                />
+            </InView>
             <div className='pt-40'></div>
         </main>
     );
