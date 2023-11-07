@@ -38,6 +38,10 @@ module.exports = {
                     '2xl': '1040px',
                 },
             },
+
+            scale: {
+                '103': '1.03'
+            }
         },
     },
     plugins: [require('@tailwindcss/container-queries')],

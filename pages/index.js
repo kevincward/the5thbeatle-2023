@@ -198,7 +198,7 @@ export default function Home() {
                                     {Object.keys(caseStudies).map((key) => (
                                         <SwiperSlide key={key}>
                                             <div
-                                                className='case-study-card w-[170px] rounded bg-white p-6 drop-shadow lg:w-[350px] hover:shadow-xl transition-shadow duration-300 ease-in-out'
+                                                className='case-study-card w-[170px] rounded bg-white p-6 lg:w-[350px] hover:shadow-xl transition-shadow duration-300 ease-in-out border border-orange border-opacity-20'
                                                 onClick={() => {
                                                     setActiveCaseStudyImage(
                                                         caseStudies[key].image

@@ -171,7 +171,7 @@ export default function Components() {
                 ]}
                 text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
             />
-            <MoreStudies title='More Case Studies' caseStudies={caseStudies} />
+            <MoreStudies title='More case studies' caseStudies={caseStudies} />
             <div className='container'>
                 <div className='scroll-mt-[152px] pb-20' id='section-1'>
                     <h2>Section 1</h2>

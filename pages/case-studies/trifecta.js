@@ -411,7 +411,7 @@ export default function Trifecta() {
                 ]}
             />
 
-            <MoreStudies title='More Case Studies' caseStudies={caseStudies} />
+            <MoreStudies title='More case studies' caseStudies={caseStudies} />
         </>
     );
 }

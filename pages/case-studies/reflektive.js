@@ -431,7 +431,7 @@ export default function Reflektive() {
             />
 
             <div className='pt-8'></div>
-            <MoreStudies title='More Case Studies' caseStudies={caseStudies} />
+            <MoreStudies title='More case studies' caseStudies={caseStudies} />
 
         </>
     );

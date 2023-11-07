@@ -17,9 +17,10 @@ export default function MoreStudies(props) {
                 <div className='flex gap-2 overflow-x-auto lg:grid lg:grid-cols-2 lg:flex-row lg:flex-wrap lg:gap-4 lg:overflow-x-hidden'>
                     {Object.keys(caseStudies).map((key) => (
                         <div className='p-2' key={key}>
-                            <div className='case-study-card w-[278px] rounded bg-white p-6 shadow-md lg:w-auto'>
+                            <div className='case-study-card w-[278px] rounded bg-white p-6 shadow-md lg:w-auto transform hover:scale-103 transition-transform duration-300'>
                                 <p className='pb-8 lg:pb-10'>
-                                    <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-2xl'>
+                                    <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-2xl'
+                                        href={caseStudies[key].url}>
                                         {caseStudies[key].title}
                                     </a>
                                 </p>

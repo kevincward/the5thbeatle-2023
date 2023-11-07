@@ -28,7 +28,7 @@ export default function PayPal() {
                 title='Crafting a seamless donation app experience'
             />
 
-            <ParallaxBlock image='/images/cs/paypal-app-bkgd-1.png' />
+            <ParallaxBlock image='/images/cs/paypal-app-bkgd-1.png' bgColor='rgba(152,110,168)' />
 
             <SecondaryNav
                 sectionOneTitle='Overview'
@@ -394,7 +394,7 @@ export default function PayPal() {
             />
 
             <div className='pt-8'></div>
-            <MoreStudies title='More Case Studies' caseStudies={caseStudies} />
+            <MoreStudies title='More case studies' caseStudies={caseStudies} />
 
         </>
     );
