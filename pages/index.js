@@ -44,25 +44,25 @@ export default function Home() {
             title: 'Building design into a key business asset',
             company: 'Trifecta',
             url: '/case-studies/trifecta',
-            image: '/images/white.svg',
+            image: '/images/cs-cover-trifecta.png',
         },
         {
             title: 'Fostering camaraderie for app retention',
             company: 'Thrive Global',
             url: '/case-studies/thrive',
-            image: '/images/white.svg',
+            image: '/images/cs-cover-thrive.png',
         },
         {
             title: 'Refreshing a product to encourage self-growth',
             company: 'Reflektive',
             url: '/case-studies/reflektive',
-            image: '/images/white.svg',
+            image: '/images/cs-cover-reflektive.png',
         },
         {
             title: 'Crafting a seamless donation app experience',
             company: 'PayPal',
             url: '/case-studies/paypal-app',
-            image: '/images/white.svg',
+            image: '/images/cs-cover-pp-app.png',
         },
     ];
 
