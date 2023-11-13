@@ -3,6 +3,7 @@ import localFont from 'next/font/local';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import '@/styles/globals.scss';
+import Head from 'next/head';
 
 const inter = Inter({
     subsets: ['latin'],
@@ -36,8 +37,26 @@ export default function App({ Component, pageProps }) {
             className={`${inter.variable} ${recoleta.variable} font-sans ${inter.className}`}
         >
             <Header />
+
+            <Head>
+
+                {/* Hotjar Tracking Code */}
+                <script dangerouslySetInnerHTML={{
+                    __html: `(function(h,o,t,j,a,r){
+    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:3733076,hjsv:6};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`,
+                }} />
+            </Head>
+
             <Component {...pageProps} />
             <Footer />
         </main>
+
+
     );
 }
