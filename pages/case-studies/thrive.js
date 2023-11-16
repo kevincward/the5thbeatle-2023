@@ -7,6 +7,10 @@ import ProblemCard from '@/components/problemCard';
 import Results from '@/components/results';
 import MoreStudies from '@/components/moreStudies';
 
+import { useEffect, useState } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { InView } from 'react-intersection-observer';
+
 export default function Thrive() {
     const caseStudies = [
         {
