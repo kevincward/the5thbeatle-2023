@@ -45,12 +45,12 @@ export default function moreStudies(props) {
                         <div className='p-2' key={key}>
                             <div className='case-study-card w-[278px] rounded bg-white p-6 shadow-md lg:w-auto transform hover:scale-103 transition-transform duration-300'>
                                 <p className='pb-8 lg:pb-10'>
-                                    <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-2xl'
+                                    <a className='font-recoleta text-[1.3125rem] font-semibold leading-5 lg:text-xl'
                                         href={caseStudies[key].url}>
                                         {caseStudies[key].title}
                                     </a>
                                 </p>
-                                <p className='pb-2 font-recoleta text-xl text-gray lg:pb-4'>
+                                <p className='pb-2 font-recoleta text-l text-gray lg:pb-4'>
                                     {caseStudies[key].company}
                                 </p>
                                 <div className='mb-2 h-[1px] w-[5.0625rem] bg-orange lg:mb-4'></div>

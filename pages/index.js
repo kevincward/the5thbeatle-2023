@@ -220,8 +220,12 @@ export default function Home() {
                                                         {caseStudies[key].title}
                                                     </a>
                                                 </p>
-                                                <p className='pb-2 font-recoleta text-xl text-gray lg:pb-4'>
-                                                    {caseStudies[key].company}
+                                                <p className='pb-2'>
+                                                    <a className='font-recoleta text-xl text-gray lg:pb-4'
+                                                        href={caseStudies[key].url}
+                                                    >
+                                                        {caseStudies[key].company}
+                                                    </a>
                                                 </p>
                                                 <div className='mb-2 h-[1px] w-[5.0625rem] bg-orange lg:mb-4'></div>
                                                 <a
