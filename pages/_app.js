@@ -3,7 +3,6 @@ import localFont from 'next/font/local';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import '@/styles/globals.scss';
-import Script from 'next/script';
 
 const inter = Inter({
     subsets: ['latin'],
