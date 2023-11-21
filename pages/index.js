@@ -153,16 +153,13 @@ export default function Home() {
                                 While my band is on hiatus, I&apos;m focused on
                                 designing meaningful products.
                             </p>
-                            <p className='text-xl' id='anchor-cs'>
-                                Principal Product Designer at{' '}
-                                <a
-                                    className='font-recoleta text-purple'
-                                    href='https://www.trifectanutrition.com/'
-                                    target='_blank'
-                                >
-                                    Trifecta
-                                </a>
+                            <p className='font-recoleta text-purple text-xl' id='anchor-cs'>
+                                Principal Product Designer
                             </p>
+                            <p className='text-l' id='anchor-cs'>
+                                Previously at PayPal, Reflektive, and Trifecta
+                            </p>
+
                         </div>
                     </div>
                     <div className='absolute right-0 top-0 hidden lg:block'>
