@@ -110,7 +110,7 @@ export default function Home() {
 
     const [activeSkill, setActiveSkill] = useState(0);
     const [activeCaseStudyImage, setActiveCaseStudyImage] = useState(
-        '/images/white.svg',
+        '/images/cs-cover-trifecta.png',
     );
 
 
