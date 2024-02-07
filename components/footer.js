@@ -60,7 +60,7 @@ export default function Footer() {
             </div>
             <div className='lg:container'>
                 <p className='flex items-center font-recoleta text-sm text-white'>
-                    This website was last updated in 2023{' '}
+                    This website was last updated in 2024{' '}
                     <Image
                         src='/images/peace-icon.svg'
                         alt='peace and love icon'
