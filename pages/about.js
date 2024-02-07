@@ -15,7 +15,7 @@ export default function About() {
             logoHeight: 32,
             company: "Trifecta",
             bodyLeft: "Principal Product Designer",
-            bodyRight: "2022-Present",
+            bodyRight: "2022-23",
         },
         {
             logoSrc: "/images/timeline-tcheck.svg",
