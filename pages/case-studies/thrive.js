@@ -232,7 +232,7 @@ export default function Thrive() {
                 <div className='scroll-mt-[152px] pb-20' id='section-3'></div>
                 <TextBlockOne
                     kicker='APPROACH'
-                    title='Insert wrench: we couldn’t talk to the users we were building for...'
+                    title='Insert wrench: we couldn&lsquo;t talk to the users we were building for...'
                     aboveContent='Leadership tasked us with creating the MVP of the challenges feature for a key client, yet we faced the challenge of limited access to their employees for gathering insights and testing concepts. To compensate, we decided to:'
                     belowContent=''
                     images={[
